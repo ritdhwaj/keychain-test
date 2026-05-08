@@ -1,166 +1,67 @@
-<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="1" time="138.75444399999998">
-<testsuite name="auth.setup.ts" timestamp="2026-05-08T10:05:37.842Z" hostname="setup" tests="1" failures="0" skipped="0" time="2.518" errors="0">
-<testcase name="authenticate" classname="auth.setup.ts" time="2.518">
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="19.011768">
+<testsuite name="auth.setup.ts" timestamp="2026-05-08T10:30:21.600Z" hostname="setup" tests="1" failures="0" skipped="0" time="2.289" errors="0">
+<testcase name="authenticate" classname="auth.setup.ts" time="2.289">
 <system-out>
-<![CDATA[[32m[2026-05-08T15:35:40.220] [INFO] playwright - [39mConduitSignInPage initialized with all locators
-[32m[2026-05-08T15:35:40.222] [INFO] playwright - [39mNavigating to Conduit sign-in page
-[32m[2026-05-08T15:35:41.339] [INFO] playwright - [39mSign-in page loaded successfully
-[32m[2026-05-08T15:35:41.339] [INFO] playwright - [39mPerforming sign-in with email: conduituser@test.com
-[32m[2026-05-08T15:35:41.342] [INFO] playwright - [39mFilling email field with: conduituser@test.com
-[32m[2026-05-08T15:35:41.478] [INFO] playwright - [39mFilling password field
-[32m[2026-05-08T15:35:41.638] [INFO] playwright - [39mClicking Sign In button
+<![CDATA[[32m[2026-05-08T16:00:23.497] [INFO] playwright - [39mConduitSignInPage initialized with all locators
+[32m[2026-05-08T16:00:23.498] [INFO] playwright - [39mNavigating to Conduit sign-in page
+[32m[2026-05-08T16:00:24.637] [INFO] playwright - [39mSign-in page loaded successfully
+[32m[2026-05-08T16:00:24.637] [INFO] playwright - [39mPerforming sign-in with email: conduituser@test.com
+[32m[2026-05-08T16:00:24.637] [INFO] playwright - [39mFilling email field with: conduituser@test.com
+[32m[2026-05-08T16:00:24.748] [INFO] playwright - [39mFilling password field
+[32m[2026-05-08T16:00:24.887] [INFO] playwright - [39mClicking Sign In button
 
 [[ATTACHMENT|../../test-results/auth.setup.ts-authenticate-setup/trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="ui/ConduitE2E.spec.ts" timestamp="2026-05-08T10:05:37.842Z" hostname="Chromium" tests="3" failures="0" skipped="0" time="122.793" errors="1">
-<testcase name="Conduit E2E Flow (Extended) › should complete the full E2E flow including comments" classname="ui/ConduitE2E.spec.ts" time="5.903">
+<testsuite name="ui/ConduitE2E.spec.ts" timestamp="2026-05-08T10:30:21.600Z" hostname="Chromium" tests="3" failures="0" skipped="0" time="11.83" errors="0">
+<testcase name="Conduit E2E Flow (Extended) › should complete the full E2E flow including comments" classname="ui/ConduitE2E.spec.ts" time="5.28">
 <system-out>
-<![CDATA[[32m[2026-05-08T15:35:45.975] [INFO] playwright - [39mConduitSignUpPage initialized
-[32m[2026-05-08T15:35:45.978] [INFO] playwright - [39mConduitSignInPage initialized with all locators
-[32m[2026-05-08T15:35:45.979] [INFO] playwright - [39mConduitPostPage initialized
-[32m[2026-05-08T15:35:46.698] [INFO] playwright - [39mSigning up user: user_1778234745111
-[32m[2026-05-08T15:35:48.344] [INFO] playwright - [39mNavigating to Conduit sign-in page
-[32m[2026-05-08T15:35:48.911] [INFO] playwright - [39mSign-in page loaded successfully
-[32m[2026-05-08T15:35:48.912] [INFO] playwright - [39mPerforming sign-in with email: user_1778234745111@test.com
-[32m[2026-05-08T15:35:48.912] [INFO] playwright - [39mFilling email field with: user_1778234745111@test.com
-[32m[2026-05-08T15:35:49.017] [INFO] playwright - [39mFilling password field
-[32m[2026-05-08T15:35:49.117] [INFO] playwright - [39mClicking Sign In button
-[32m[2026-05-08T15:35:49.500] [INFO] playwright - [39mCreating post: E2E Post 1778234745111
-[32m[2026-05-08T15:35:49.954] [INFO] playwright - [39mAdding comment: This is an E2E comment
-[32m[2026-05-08T15:35:50.158] [INFO] playwright - [39mDeleting comment
-[32m[2026-05-08T15:35:50.290] [INFO] playwright - [39mUpdating post to: Updated E2E Post 1778234745111
-[32m[2026-05-08T15:35:50.718] [INFO] playwright - [39mDeleting post
+<![CDATA[[32m[2026-05-08T16:00:28.191] [INFO] playwright - [39mConduitSignUpPage initialized
+[32m[2026-05-08T16:00:28.195] [INFO] playwright - [39mConduitSignInPage initialized with all locators
+[32m[2026-05-08T16:00:28.197] [INFO] playwright - [39mConduitPostPage initialized
+[32m[2026-05-08T16:00:28.830] [INFO] playwright - [39mSigning up user: user_1778236227381
+[32m[2026-05-08T16:00:30.204] [INFO] playwright - [39mNavigating to Conduit sign-in page
+[32m[2026-05-08T16:00:30.864] [INFO] playwright - [39mSign-in page loaded successfully
+[32m[2026-05-08T16:00:30.864] [INFO] playwright - [39mPerforming sign-in with email: user_1778236227381@test.com
+[32m[2026-05-08T16:00:30.865] [INFO] playwright - [39mFilling email field with: user_1778236227381@test.com
+[32m[2026-05-08T16:00:30.930] [INFO] playwright - [39mFilling password field
+[32m[2026-05-08T16:00:31.039] [INFO] playwright - [39mClicking Sign In button
+[32m[2026-05-08T16:00:31.342] [INFO] playwright - [39mCreating post: E2E Post 1778236227381
+[32m[2026-05-08T16:00:31.739] [INFO] playwright - [39mAdding comment: This is an E2E comment
+[32m[2026-05-08T16:00:31.990] [INFO] playwright - [39mDeleting comment
+[32m[2026-05-08T16:00:32.172] [INFO] playwright - [39mUpdating post to: Updated E2E Post 1778236227381
+[32m[2026-05-08T16:00:32.505] [INFO] playwright - [39mDeleting post
 
 [[ATTACHMENT|../../test-results/ui-ConduitE2E-Conduit-E2E--704c9-E2E-flow-including-comments-Chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Conduit E2E Flow (Extended) › should update user profile in settings" classname="ui/ConduitE2E.spec.ts" time="28.291">
+<testcase name="Conduit E2E Flow (Extended) › should update user profile in settings" classname="ui/ConduitE2E.spec.ts" time="2.244">
 <system-out>
-<![CDATA[
-[[ATTACHMENT|../../test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../../test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium/video.webm]]
-
-[[ATTACHMENT|../../test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium/error-context.md]]
+<![CDATA[[32m[2026-05-08T16:00:33.504] [INFO] playwright - [39mConduitSettingsPage initialized
+[32m[2026-05-08T16:00:34.255] [INFO] playwright - [39mUpdating bio to: Bio updated at 2026-05-08T10:30:34.255Z
 
 [[ATTACHMENT|../../test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium/trace.zip]]
-
-[[ATTACHMENT|../../test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Conduit E2E Flow (Extended) › should mark an article as favorite and verify it on the profile page" classname="ui/ConduitE2E.spec.ts" time="88.599">
+<testcase name="Conduit E2E Flow (Extended) › should mark an article as favorite and verify it on the profile page" classname="ui/ConduitE2E.spec.ts" time="4.306">
 <system-out>
-<![CDATA[[32m[2026-05-08T15:36:23.727] [INFO] playwright - [39mConduitSignUpPage initialized
-[32m[2026-05-08T15:36:23.731] [INFO] playwright - [39mConduitPostPage initialized
-[32m[2026-05-08T15:36:23.743] [INFO] playwright - [39mConduitProfilePage initialized
-[32m[2026-05-08T15:36:24.488] [INFO] playwright - [39mSigning up user: fav_user_1778234774309
-[32m[2026-05-08T15:36:25.173] [INFO] playwright - [39mCreating post: E2E Post 1778234774309
-
-[[ATTACHMENT|../../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/video.webm]]
-
-[[ATTACHMENT|../../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/error-context.md]]
+<![CDATA[[32m[2026-05-08T16:00:35.855] [INFO] playwright - [39mConduitSignUpPage initialized
+[32m[2026-05-08T16:00:35.857] [INFO] playwright - [39mConduitPostPage initialized
+[32m[2026-05-08T16:00:35.858] [INFO] playwright - [39mConduitProfilePage initialized
+[32m[2026-05-08T16:00:36.440] [INFO] playwright - [39mSigning up user: fav_user_1778236227381
+[32m[2026-05-08T16:00:37.143] [INFO] playwright - [39mCreating post: E2E Post 1778236227381
+[32m[2026-05-08T16:00:38.141] [INFO] playwright - [39mFavoriting the first article
+[32m[2026-05-08T16:00:38.241] [INFO] playwright - [39mSwitching to Favorited Articles tab
+[32m[2026-05-08T16:00:38.372] [INFO] playwright - [39mFavoriting the first article
+[32m[2026-05-08T16:00:39.424] [INFO] playwright - [39mSwitching to Favorited Articles tab
 
 [[ATTACHMENT|../../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/trace.zip]]
-[32m[2026-05-08T15:37:02.634] [INFO] playwright - [39mConduitSignUpPage initialized
-[32m[2026-05-08T15:37:02.640] [INFO] playwright - [39mConduitPostPage initialized
-[32m[2026-05-08T15:37:02.649] [INFO] playwright - [39mConduitProfilePage initialized
-[32m[2026-05-08T15:37:03.743] [INFO] playwright - [39mSigning up user: fav_user_1778234821711
-[32m[2026-05-08T15:37:04.516] [INFO] playwright - [39mCreating post: E2E Post 1778234821711
-
-[[ATTACHMENT|../../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/error-context.md]]
-
-[[ATTACHMENT|../../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/trace.zip]]
 ]]>
 </system-out>
-<error message="locator.waitFor: Timeout 30000ms exceeded." type="TimeoutError">
-<![CDATA[  [Chromium] › ui/ConduitE2E.spec.ts:88:5 › Conduit E2E Flow (Extended) › should mark an article as favorite and verify it on the profile page 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByPlaceholder('Article Title') to be visible
-
-
-       at ../src/base/BasePage.ts:37
-
-      35 |   async fill(selector: string | Locator, value: string, options = { timeout: this.defaultTimeout }) {
-      36 |     const locator = this.getLocator(selector);
-    > 37 |     await locator.waitFor({ state: 'visible', timeout: options.timeout });
-         |                   ^
-      38 |     await locator.fill(value);
-      39 |   }
-      40 |
-        at ConduitPostPage.fill (/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts:37:19)
-        at ConduitPostPage.createPost (/Users/mac/Desktop/keychain-test/keychain-test/src/pages/ConduitPostPage.ts:57:20)
-        at /Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts:99:31
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace ../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.fill: Timeout 45000ms exceeded.
-    Call log:
-      - waiting for getByPlaceholder('Article Title')
-
-
-       at ../src/base/BasePage.ts:38
-
-      36 |     const locator = this.getLocator(selector);
-      37 |     await locator.waitFor({ state: 'visible', timeout: options.timeout });
-    > 38 |     await locator.fill(value);
-         |                   ^
-      39 |   }
-      40 |
-      41 |   async clear(selector: string | Locator, options = { timeout: this.defaultTimeout }) {
-        at ConduitPostPage.fill (/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts:38:19)
-        at ConduitPostPage.createPost (/Users/mac/Desktop/keychain-test/keychain-test/src/pages/ConduitPostPage.ts:57:9)
-        at /Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts:99:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace ../test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</error>
 </testcase>
 </testsuite>
 </testsuites>

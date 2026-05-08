@@ -67,54 +67,64 @@ test.describe('Conduit E2E Flow (Extended)', () => {
         await expect(page).toHaveURL(baseURL + '/');
     });
 
-    test('should update user profile in settings', async ({ conduitSignInPage, conduitSettingsPage, page }) => {
-        // Log in using credentials from .env
-        await conduitSignInPage.navigateToSignIn(baseURL);
-        await conduitSignInPage.signIn(process.env.CONDUIT_TEST_EMAIL || 'conduituser@test.com', process.env.CONDUIT_TEST_PASSWORD || 'Conduit@123');
+    test('should update user profile in settings', async ({ conduitSettingsPage, cfg, page }) => {
+        // Reuse global auth state - navigate directly to settings
+        await page.goto(`${cfg.baseURL}/settings`);
         
-        await page.goto(`${baseURL}/settings`);
         const newBio = `Bio updated at ${new Date().toISOString()}`;
         await conduitSettingsPage.updateBio(newBio);
 
-        // Verify update
-        await page.reload();
+        // The app redirects to the home page after update
+        // We'll wait for the home page and then navigate back to settings to verify persistence
+        await expect(page).toHaveURL(`${cfg.baseURL}/`);
+        await page.goto(`${cfg.baseURL}/settings`);
         await expect(conduitSettingsPage.bioLocator).toHaveValue(newBio);
     });
     test('should mark an article as favorite and verify it on the profile page', async ({
         conduitSignUpPage,
         conduitPostPage,
         conduitProfilePage,
+        cfg,
         page
     }) => {
-        // 1. Create a user and a post
+        const favUser = `fav_user_${timestamp}`;
         await conduitSignUpPage.navigateToSignUp(baseURL);
-        await conduitSignUpPage.signUp(`fav_user_${timestamp}`, `fav_${timestamp}@test.com`, 'Password123!');
+        await conduitSignUpPage.signUp(favUser, `fav_${timestamp}@test.com`, 'Password123!');
+        
+        // Wait for login to complete
+        await expect(conduitSignUpPage.userLink(favUser)).toBeVisible({ timeout: 15000 });
         
         await conduitSignUpPage.newPostLink.click();
         await conduitPostPage.createPost(postData.title, postData.description, postData.body, postData.tags);
 
         // 2. Navigate to profile
-        await conduitProfilePage.navigateToProfile(baseURL, `fav_user_${timestamp}`);
+        await conduitProfilePage.navigateToProfile(cfg.baseURL, `fav_user_${timestamp}`);
 
-        // 3. Verify article in "My Articles"
+        // 3. Verify article in "My Articles" - Use a retry-friendly expectation
+        await expect(page.locator('.article-preview h1').first()).toBeVisible({ timeout: 10000 });
         const title = await conduitProfilePage.getFirstArticleTitle();
-        expect(title).toBe(postData.title);
+        expect(title.trim()).toBe(postData.title);
 
         // 4. Favorite the article
         await conduitProfilePage.favoriteFirstArticle();
+        // Verify it becomes primary (favorited state in Conduit)
+        await expect(conduitProfilePage.favButtonLocator).toHaveClass(/btn-primary/);
 
         // 5. Check in "Favorited Articles"
         await conduitProfilePage.switchToFavoritedArticles();
+        await expect(page.locator('.article-preview h1').first()).toBeVisible({ timeout: 10000 });
         const favTitle = await conduitProfilePage.getFirstArticleTitle();
-        expect(favTitle).toBe(postData.title);
+        expect(favTitle.trim()).toBe(postData.title);
 
         // 6. Unfavorite and verify it's removed
-        await conduitProfilePage.favoriteFirstArticle(); // Click again to unfavorite
-        await page.reload(); // Reload to reflect changes in the favorites list
+        await conduitProfilePage.favoriteFirstArticle(); 
+        // Wait for it to lose the primary class
+        await expect(conduitProfilePage.favButtonLocator).not.toHaveClass(/btn-primary/);
+        
+        await page.reload(); 
         await conduitProfilePage.switchToFavoritedArticles();
 
         // The article should no longer be present
-        const isGone = await conduitProfilePage.isNoArticlesVisible();
-        expect(isGone).toBeTruthy();
+        await expect(page.locator('.article-preview').getByText('No articles are here... yet.')).toBeVisible();
     });
 });

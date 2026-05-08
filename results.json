@@ -18,7 +18,7 @@
       {
         "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
@@ -34,7 +34,7 @@
       {
         "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
@@ -50,7 +50,7 @@
       {
         "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
@@ -66,7 +66,7 @@
       {
         "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
@@ -82,7 +82,7 @@
       {
         "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
@@ -108,7 +108,7 @@
       {
         "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
@@ -126,7 +126,7 @@
       {
         "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
@@ -143,7 +143,7 @@
       {
         "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
@@ -159,7 +159,7 @@
       {
         "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
@@ -237,34 +237,34 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2518,
+                  "duration": 2289,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "\u001b[32m[2026-05-08T15:35:40.220] [INFO] playwright - \u001b[39mConduitSignInPage initialized with all locators\n"
+                      "text": "\u001b[32m[2026-05-08T16:00:23.497] [INFO] playwright - \u001b[39mConduitSignInPage initialized with all locators\n"
                     },
                     {
-                      "text": "\u001b[32m[2026-05-08T15:35:40.222] [INFO] playwright - \u001b[39mNavigating to Conduit sign-in page\n"
+                      "text": "\u001b[32m[2026-05-08T16:00:23.498] [INFO] playwright - \u001b[39mNavigating to Conduit sign-in page\n"
                     },
                     {
-                      "text": "\u001b[32m[2026-05-08T15:35:41.339] [INFO] playwright - \u001b[39mSign-in page loaded successfully\n"
+                      "text": "\u001b[32m[2026-05-08T16:00:24.637] [INFO] playwright - \u001b[39mSign-in page loaded successfully\n"
                     },
                     {
-                      "text": "\u001b[32m[2026-05-08T15:35:41.339] [INFO] playwright - \u001b[39mPerforming sign-in with email: conduituser@test.com\n"
+                      "text": "\u001b[32m[2026-05-08T16:00:24.637] [INFO] playwright - \u001b[39mPerforming sign-in with email: conduituser@test.com\n"
                     },
                     {
-                      "text": "\u001b[32m[2026-05-08T15:35:41.342] [INFO] playwright - \u001b[39mFilling email field with: conduituser@test.com\n"
+                      "text": "\u001b[32m[2026-05-08T16:00:24.637] [INFO] playwright - \u001b[39mFilling email field with: conduituser@test.com\n"
                     },
                     {
-                      "text": "\u001b[32m[2026-05-08T15:35:41.478] [INFO] playwright - \u001b[39mFilling password field\n"
+                      "text": "\u001b[32m[2026-05-08T16:00:24.748] [INFO] playwright - \u001b[39mFilling password field\n"
                     },
                     {
-                      "text": "\u001b[32m[2026-05-08T15:35:41.638] [INFO] playwright - \u001b[39mClicking Sign In button\n"
+                      "text": "\u001b[32m[2026-05-08T16:00:24.887] [INFO] playwright - \u001b[39mClicking Sign In button\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-08T10:05:39.361Z",
+                  "startTime": "2026-05-08T10:30:22.948Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -314,58 +314,58 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5903,
+                      "duration": 5280,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:45.975] [INFO] playwright - \u001b[39mConduitSignUpPage initialized\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:28.191] [INFO] playwright - \u001b[39mConduitSignUpPage initialized\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:45.978] [INFO] playwright - \u001b[39mConduitSignInPage initialized with all locators\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:28.195] [INFO] playwright - \u001b[39mConduitSignInPage initialized with all locators\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:45.979] [INFO] playwright - \u001b[39mConduitPostPage initialized\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:28.197] [INFO] playwright - \u001b[39mConduitPostPage initialized\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:46.698] [INFO] playwright - \u001b[39mSigning up user: user_1778234745111\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:28.830] [INFO] playwright - \u001b[39mSigning up user: user_1778236227381\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:48.344] [INFO] playwright - \u001b[39mNavigating to Conduit sign-in page\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:30.204] [INFO] playwright - \u001b[39mNavigating to Conduit sign-in page\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:48.911] [INFO] playwright - \u001b[39mSign-in page loaded successfully\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:30.864] [INFO] playwright - \u001b[39mSign-in page loaded successfully\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:48.912] [INFO] playwright - \u001b[39mPerforming sign-in with email: user_1778234745111@test.com\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:30.864] [INFO] playwright - \u001b[39mPerforming sign-in with email: user_1778236227381@test.com\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:48.912] [INFO] playwright - \u001b[39mFilling email field with: user_1778234745111@test.com\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:30.865] [INFO] playwright - \u001b[39mFilling email field with: user_1778236227381@test.com\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:49.017] [INFO] playwright - \u001b[39mFilling password field\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:30.930] [INFO] playwright - \u001b[39mFilling password field\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:49.117] [INFO] playwright - \u001b[39mClicking Sign In button\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:31.039] [INFO] playwright - \u001b[39mClicking Sign In button\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:49.500] [INFO] playwright - \u001b[39mCreating post: E2E Post 1778234745111\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:31.342] [INFO] playwright - \u001b[39mCreating post: E2E Post 1778236227381\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:49.954] [INFO] playwright - \u001b[39mAdding comment: This is an E2E comment\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:31.739] [INFO] playwright - \u001b[39mAdding comment: This is an E2E comment\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:50.158] [INFO] playwright - \u001b[39mDeleting comment\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:31.990] [INFO] playwright - \u001b[39mDeleting comment\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:50.290] [INFO] playwright - \u001b[39mUpdating post to: Updated E2E Post 1778234745111\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:32.172] [INFO] playwright - \u001b[39mUpdating post to: Updated E2E Post 1778236227381\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:35:50.718] [INFO] playwright - \u001b[39mDeleting post\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:32.505] [INFO] playwright - \u001b[39mDeleting post\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T10:05:45.126Z",
+                      "startTime": "2026-05-08T10:30:27.398Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -399,82 +399,31 @@
                     {
                       "workerIndex": 1,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 19537,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('Short bio about you')\nExpected: \u001b[32m\"Bio updated at 2026-05-08T10:05:53.970Z\"\u001b[39m\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('Short bio about you')\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('Short bio about you')\nExpected: \u001b[32m\"Bio updated at 2026-05-08T10:05:53.970Z\"\u001b[39m\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('Short bio about you')\u001b[22m\n\n    at /Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts:86:68",
-                        "location": {
-                          "file": "/Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts",
-                          "column": 68,
-                          "line": 86
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 84 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mreload()\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Short bio about you'\u001b[39m))\u001b[33m.\u001b[39mtoHaveValue(newBio)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 87 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 88 |\u001b[39m     test(\u001b[32m'should mark an article as favorite and verify it on the profile page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\n \u001b[90m 89 |\u001b[39m         conduitSignUpPage\u001b[33m,\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
+                      "status": "passed",
+                      "duration": 2244,
+                      "errors": [],
+                      "stdout": [
                         {
-                          "location": {
-                            "file": "/Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts",
-                            "column": 68,
-                            "line": 86
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('Short bio about you')\nExpected: \u001b[32m\"Bio updated at 2026-05-08T10:05:53.970Z\"\u001b[39m\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('Short bio about you')\u001b[22m\n\n\n\u001b[0m \u001b[90m 84 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mreload()\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Short bio about you'\u001b[39m))\u001b[33m.\u001b[39mtoHaveValue(newBio)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 87 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 88 |\u001b[39m     test(\u001b[32m'should mark an article as favorite and verify it on the profile page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\n \u001b[90m 89 |\u001b[39m         conduitSignUpPage\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at /Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts:86:68\u001b[22m"
+                          "text": "\u001b[32m[2026-05-08T16:00:33.504] [INFO] playwright - \u001b[39mConduitSettingsPage initialized\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T16:00:34.255] [INFO] playwright - \u001b[39mUpdating bio to: Bio updated at 2026-05-08T10:30:34.255Z\n"
                         }
                       ],
-                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T10:05:51.628Z",
+                      "startTime": "2026-05-08T10:30:33.195Z",
                       "annotations": [],
                       "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium/test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium/video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium/error-context.md"
-                        },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
                           "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium/trace.zip"
                         }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts",
-                        "column": 68,
-                        "line": 86
-                      }
-                    },
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 8754,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2026-05-08T10:06:14.322Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium-retry1/trace.zip"
-                        }
                       ]
                     }
                   ],
-                  "status": "flaky"
+                  "status": "expected"
                 }
               ],
               "id": "886c50021d96aa757044-52a8faa9063e117e48f7",
@@ -484,7 +433,7 @@
             },
             {
               "title": "should mark an article as favorite and verify it on the profile page",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -495,160 +444,59 @@
                   "projectName": "Chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 35046,
-                      "error": {
-                        "message": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Article Title') to be visible\u001b[22m\n",
-                        "stack": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Article Title') to be visible\u001b[22m\n\n    at ConduitPostPage.fill (/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts:37:19)\n    at ConduitPostPage.createPost (/Users/mac/Desktop/keychain-test/keychain-test/src/pages/ConduitPostPage.ts:57:20)\n    at /Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts:99:31",
-                        "location": {
-                          "file": "/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts",
-                          "column": 19,
-                          "line": 37
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m../src/base/BasePage.ts:37\n\n\u001b[0m \u001b[90m 35 |\u001b[39m   \u001b[36masync\u001b[39m fill(selector\u001b[33m:\u001b[39m string \u001b[33m|\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m value\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options \u001b[33m=\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdefaultTimeout }) {\n \u001b[90m 36 |\u001b[39m     \u001b[36mconst\u001b[39m locator \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator(selector)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m options\u001b[33m.\u001b[39mtimeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mfill(value)\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m   }\n \u001b[90m 40 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts",
-                            "column": 19,
-                            "line": 37
-                          },
-                          "message": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Article Title') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../src/base/BasePage.ts:37\n\n\u001b[0m \u001b[90m 35 |\u001b[39m   \u001b[36masync\u001b[39m fill(selector\u001b[33m:\u001b[39m string \u001b[33m|\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m value\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options \u001b[33m=\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdefaultTimeout }) {\n \u001b[90m 36 |\u001b[39m     \u001b[36mconst\u001b[39m locator \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator(selector)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m options\u001b[33m.\u001b[39mtimeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mfill(value)\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m   }\n \u001b[90m 40 |\u001b[39m\u001b[0m\n\u001b[2m    at ConduitPostPage.fill (/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts:37:19)\u001b[22m\n\u001b[2m    at ConduitPostPage.createPost (/Users/mac/Desktop/keychain-test/keychain-test/src/pages/ConduitPostPage.ts:57:20)\u001b[22m\n\u001b[2m    at /Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts:99:31\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 4306,
+                      "errors": [],
                       "stdout": [
                         {
-                          "text": "\u001b[32m[2026-05-08T15:36:23.727] [INFO] playwright - \u001b[39mConduitSignUpPage initialized\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:35.855] [INFO] playwright - \u001b[39mConduitSignUpPage initialized\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:36:23.731] [INFO] playwright - \u001b[39mConduitPostPage initialized\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:35.857] [INFO] playwright - \u001b[39mConduitPostPage initialized\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:36:23.743] [INFO] playwright - \u001b[39mConduitProfilePage initialized\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:35.858] [INFO] playwright - \u001b[39mConduitProfilePage initialized\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:36:24.488] [INFO] playwright - \u001b[39mSigning up user: fav_user_1778234774309\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:36.440] [INFO] playwright - \u001b[39mSigning up user: fav_user_1778236227381\n"
                         },
                         {
-                          "text": "\u001b[32m[2026-05-08T15:36:25.173] [INFO] playwright - \u001b[39mCreating post: E2E Post 1778234774309\n"
+                          "text": "\u001b[32m[2026-05-08T16:00:37.143] [INFO] playwright - \u001b[39mCreating post: E2E Post 1778236227381\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T16:00:38.141] [INFO] playwright - \u001b[39mFavoriting the first article\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T16:00:38.241] [INFO] playwright - \u001b[39mSwitching to Favorited Articles tab\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T16:00:38.372] [INFO] playwright - \u001b[39mFavoriting the first article\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T16:00:39.424] [INFO] playwright - \u001b[39mSwitching to Favorited Articles tab\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T10:06:23.429Z",
+                      "startTime": "2026-05-08T10:30:35.522Z",
                       "annotations": [],
                       "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/error-context.md"
-                        },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
                           "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/trace.zip"
                         }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts",
-                        "column": 19,
-                        "line": 37
-                      }
-                    },
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 53553,
-                      "error": {
-                        "message": "TimeoutError: locator.fill: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Article Title')\u001b[22m\n",
-                        "stack": "TimeoutError: locator.fill: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Article Title')\u001b[22m\n\n    at ConduitPostPage.fill (/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts:38:19)\n    at ConduitPostPage.createPost (/Users/mac/Desktop/keychain-test/keychain-test/src/pages/ConduitPostPage.ts:57:9)\n    at /Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts:99:9",
-                        "location": {
-                          "file": "/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts",
-                          "column": 19,
-                          "line": 38
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m../src/base/BasePage.ts:38\n\n\u001b[0m \u001b[90m 36 |\u001b[39m     \u001b[36mconst\u001b[39m locator \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator(selector)\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m options\u001b[33m.\u001b[39mtimeout })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mfill(value)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 39 |\u001b[39m   }\n \u001b[90m 40 |\u001b[39m\n \u001b[90m 41 |\u001b[39m   \u001b[36masync\u001b[39m clear(selector\u001b[33m:\u001b[39m string \u001b[33m|\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m options \u001b[33m=\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdefaultTimeout }) {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts",
-                            "column": 19,
-                            "line": 38
-                          },
-                          "message": "TimeoutError: locator.fill: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Article Title')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../src/base/BasePage.ts:38\n\n\u001b[0m \u001b[90m 36 |\u001b[39m     \u001b[36mconst\u001b[39m locator \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator(selector)\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m options\u001b[33m.\u001b[39mtimeout })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mfill(value)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 39 |\u001b[39m   }\n \u001b[90m 40 |\u001b[39m\n \u001b[90m 41 |\u001b[39m   \u001b[36masync\u001b[39m clear(selector\u001b[33m:\u001b[39m string \u001b[33m|\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m options \u001b[33m=\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdefaultTimeout }) {\u001b[0m\n\u001b[2m    at ConduitPostPage.fill (/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts:38:19)\u001b[22m\n\u001b[2m    at ConduitPostPage.createPost (/Users/mac/Desktop/keychain-test/keychain-test/src/pages/ConduitPostPage.ts:57:9)\u001b[22m\n\u001b[2m    at /Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts:99:9\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "\u001b[32m[2026-05-08T15:37:02.634] [INFO] playwright - \u001b[39mConduitSignUpPage initialized\n"
-                        },
-                        {
-                          "text": "\u001b[32m[2026-05-08T15:37:02.640] [INFO] playwright - \u001b[39mConduitPostPage initialized\n"
-                        },
-                        {
-                          "text": "\u001b[32m[2026-05-08T15:37:02.649] [INFO] playwright - \u001b[39mConduitProfilePage initialized\n"
-                        },
-                        {
-                          "text": "\u001b[32m[2026-05-08T15:37:03.743] [INFO] playwright - \u001b[39mSigning up user: fav_user_1778234821711\n"
-                        },
-                        {
-                          "text": "\u001b[32m[2026-05-08T15:37:04.516] [INFO] playwright - \u001b[39mCreating post: E2E Post 1778234821711\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2026-05-08T10:07:01.743Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts",
-                        "column": 19,
-                        "line": 38
-                      }
+                      ]
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "886c50021d96aa757044-d01ce32f07637bd83fa2",
               "file": "ui/ConduitE2E.spec.ts",
-              "line": 88,
+              "line": 83,
               "column": 5
             }
           ]
@@ -658,11 +506,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-08T10:05:37.234Z",
-    "duration": 138754.444,
-    "expected": 2,
+    "startTime": "2026-05-08T10:30:21.052Z",
+    "duration": 19011.768,
+    "expected": 4,
     "skipped": 0,
-    "unexpected": 1,
-    "flaky": 1
+    "unexpected": 0,
+    "flaky": 0
   }
 }

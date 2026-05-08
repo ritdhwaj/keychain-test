@@ -27,11 +27,11 @@ export class ConduitSignUpPage extends BasePage {
         logger.info('ConduitSignUpPage initialized');
     }
 
-    // Getters for assertions
+    // Getters for assertions and shared navigation
     userLink(username: string) { return this.page.getByRole('link', { name: username }); }
     get settingsLink() { return this.page.getByRole('link', { name: 'Settings' }); }
-    get logoutButton() { return this.page.getByRole('button', { name: 'Or click here to logout.' }); }
-    get newPostLink() { return this.page.getByRole('link', { name: ' New Post' }); }
+    get logoutButton() { return this.page.getByRole('button', { name: /logout/i }); }
+    get newPostLink() { return this.page.locator('a[href*="editor"]'); }
 
     async navigateToSignUp(baseURL: string): Promise<void> {
         await this.open(`${baseURL}/register`);

@@ -25,6 +25,8 @@ export class ConduitProfilePage extends BasePage {
         logger.info('ConduitProfilePage initialized');
     }
 
+    get favButtonLocator() { return this.firstArticleFavoriteButton; }
+
     async navigateToProfile(baseURL: string, username: string): Promise<void> {
         await this.open(`${baseURL}/@${username}`);
     }

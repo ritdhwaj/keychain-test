@@ -16,7 +16,7 @@ This document outlines the architectural decisions and design patterns implement
 
 ## 3. Test Organization & Execution
 - **Segmentation**: Tests are categorized into `ui`, `api`, and `setup` directories.
-- **Project-Based Execution**: `playwright.config.ts` defines multiple projects (e.g., `Chromium`, `CJR`, `API`, `OrderFlows`) to allow for granular test runs and specific configuration overrides.
+- **Project-Based Execution**: `playwright.config.ts` defines multiple projects (e.g., `Chromium`, `API`) to allow for granular test runs and specific configuration overrides.
 - **Serial Execution**: Workers are constrained to `1` in the global config to ensure stability in environments where parallel execution might lead to data contention or session issues.
 
 ## 4. State Management & Optimization
