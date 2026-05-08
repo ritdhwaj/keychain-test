@@ -1,0 +1,21 @@
+
+export const API_ENDPOINTS = {
+    ADMIN_BATCH_CATEGORIES: '/v1/admin/batch-categories',
+    ADMIN_BATCH_CATEGORY_DELETE: (categoryId: string) => `/v1/admin/batch-categories/${categoryId}`,
+    ADMIN_BATCHES: '/v1/admin/batches',
+    KHAZANA_SEARCH: (programId: string) => `/v2/programs/${programId}/khazana/search`,
+    ADMIN_BATCH_BY_ID: (batchId: string) => `/v1/admin/batches/${batchId}`,
+    ADMIN_BATCH_UPDATE: (batchId: string) => `/v1/admin/batches/${batchId}`,
+    CJR_ADMIN_PAGE_CONFIGS: '/v1/admin/page-configs',
+    CJR_ADMIN_PAGE_CONFIG_BY_ID: (pageConfigId: string) => `/v1/admin/page-configs/${pageConfigId}`,
+    CJR_ADMIN_JOURNEY_TEMPLATE: '/v1/admin/journey-template',
+    CJR_ADMIN_JOURNEY_TEMPLATE_BY_ID: (templateId: string) => `/v1/admin/journey-template/${templateId}`,
+    CJR_BATCH_LIST: '/v1/batch/list',
+    CJR_BATCH_DETAILS: (batchId: string) => `/v1/batch/${batchId}/details`,
+    CJR_SPECIAL_OFFER_DETAILS: (batchId: string) => `/v1/batch/${batchId}/special-offer-details`,
+    ISAT_LANDING_PAGE :'/vpservice/general-api/isat-landing-page/v3',
+    ISAT_GET_CATEOGORY_LIST : '/vpservice/general-api/isat-landing-page/v2/get-category-list',
+    ERP_REGISTRATION: '/scholar/NewRegistration',
+    CJR_JOURNEY_OPEN_SESSION_DETAILS: '/v1/journey/open-session/details',
+    CREATE_PAYMENT: '/scholar/CreatePayment',
+};

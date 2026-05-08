@@ -1,0 +1,74 @@
+<testsuites id="" name="" tests="10" failures="0" skipped="0" errors="0" time="4.647919">
+<testsuite name="api/ConduitApiE2E.spec.ts" timestamp="2026-05-08T10:05:18.819Z" hostname="API" tests="10" failures="0" skipped="0" time="1.069" errors="0">
+<testcase name="Conduit API E2E Journey › Step 1: User Registration" classname="api/ConduitApiE2E.spec.ts" time="0.195">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../../test-results/api-ConduitApiE2E-Conduit--f247b-ey-Step-1-User-Registration-API/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Conduit API E2E Journey › Step 2: User Login" classname="api/ConduitApiE2E.spec.ts" time="0.133">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../../test-results/api-ConduitApiE2E-Conduit-API-E2E-Journey-Step-2-User-Login-API/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Conduit API E2E Journey › Step 3: Create Article" classname="api/ConduitApiE2E.spec.ts" time="0.063">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../../test-results/api-ConduitApiE2E-Conduit--1950d-urney-Step-3-Create-Article-API/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Conduit API E2E Journey › Step 4: Update Article" classname="api/ConduitApiE2E.spec.ts" time="0.105">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../../test-results/api-ConduitApiE2E-Conduit--90523-urney-Step-4-Update-Article-API/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Conduit API E2E Journey › Step 5: View Articles" classname="api/ConduitApiE2E.spec.ts" time="0.108">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../../test-results/api-ConduitApiE2E-Conduit--0f61c-ourney-Step-5-View-Articles-API/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Conduit API E2E Journey › Step 6: Delete Article" classname="api/ConduitApiE2E.spec.ts" time="0.053">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../../test-results/api-ConduitApiE2E-Conduit--15851-urney-Step-6-Delete-Article-API/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Conduit API E2E Journey › Step 7: Verify Deletion" classname="api/ConduitApiE2E.spec.ts" time="0.11">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../../test-results/api-ConduitApiE2E-Conduit--22a74-rney-Step-7-Verify-Deletion-API/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Conduit API Negative Tests › should not register with existing email" classname="api/ConduitApiE2E.spec.ts" time="0.123">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../../test-results/api-ConduitApiE2E-Conduit--3a599-egister-with-existing-email-API/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Conduit API Negative Tests › should not create article without token" classname="api/ConduitApiE2E.spec.ts" time="0.056">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../../test-results/api-ConduitApiE2E-Conduit--440e8-reate-article-without-token-API/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Conduit API Negative Tests › should not login with invalid password" classname="api/ConduitApiE2E.spec.ts" time="0.123">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../../test-results/api-ConduitApiE2E-Conduit--f1c49-login-with-invalid-password-API/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

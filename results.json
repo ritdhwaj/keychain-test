@@ -1,0 +1,753 @@
+{
+  "config": {
+    "configFile": "/Users/mac/Desktop/keychain-test/keychain-test/playwright.config.ts",
+    "rootDir": "/Users/mac/Desktop/keychain-test/keychain-test/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "/Users/mac/Desktop/keychain-test/keychain-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/auth.setup.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "ordersAuthSetup",
+        "name": "ordersAuthSetup",
+        "testDir": "/Users/mac/Desktop/keychain-test/keychain-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/batch.auth.setup.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "cjrAuthSetup",
+        "name": "cjrAuthSetup",
+        "testDir": "/Users/mac/Desktop/keychain-test/keychain-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/cjr.auth.setup.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "login",
+        "name": "login",
+        "testDir": "/Users/mac/Desktop/keychain-test/keychain-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/tests\\/ui\\/Login\\.spec\\.ts$/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Chromium",
+        "name": "Chromium",
+        "testDir": "/Users/mac/Desktop/keychain-test/keychain-test/tests",
+        "testIgnore": [
+          "/tests\\/ui\\/Login\\.spec\\.ts$/",
+          "/tests\\/api\\/.*\\.ts$/",
+          "/tests\\/ui\\/CjrRevmapHome\\.spec\\.ts$/",
+          "/tests\\/ui\\/CjrExplorePage\\.spec\\.ts$/",
+          "/tests\\/ui\\/CjrOpenSession\\.spec\\.ts$/",
+          "/tests\\/ui\\/orderFlows\\/.*\\.ts$/",
+          "/tests\\/ui\\/ezPay\\/.*\\.ts$/",
+          "/tests\\/ui\\/CentrePage\\/.*\\.spec\\.ts$/",
+          "/tests\\/ui\\/vpFlows\\/.*\\.spec\\.ts$/"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "CJR",
+        "name": "CJR",
+        "testDir": "/Users/mac/Desktop/keychain-test/keychain-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/tests\\/ui\\/CjrRevmapHome\\.spec\\.ts$/",
+          "/tests\\/ui\\/CjrExplorePage\\.spec\\.ts$/",
+          "/tests\\/ui\\/CjrOpenSession\\.spec\\.ts$/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "CentrePage-NoSetup",
+        "name": "CentrePage-NoSetup",
+        "testDir": "/Users/mac/Desktop/keychain-test/keychain-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/tests\\/ui\\/CentrePage\\/.*\\.spec\\.ts$/",
+          "/tests\\/ui\\/vpFlows\\/.*\\.spec\\.ts$/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "API",
+        "name": "API",
+        "testDir": "/Users/mac/Desktop/keychain-test/keychain-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/tests\\/api\\/.*\\.ts$/"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/mac/Desktop/keychain-test/keychain-test/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "OrderFlows Independent session",
+        "name": "OrderFlows Independent session",
+        "testDir": "/Users/mac/Desktop/keychain-test/keychain-test/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/tests\\/ui\\/orderFlows\\/.*\\.ts$/"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "/Users/mac/Desktop/keychain-test/keychain-test/node_modules/allure-playwright/dist/index.js",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "reports/junit/results.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api/ConduitApiE2E.spec.ts",
+      "file": "api/ConduitApiE2E.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Conduit API E2E Journey",
+          "file": "api/ConduitApiE2E.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Step 1: User Registration",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API",
+                  "projectName": "API",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 195,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-08T10:05:20.829Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "API-1 Request (POST users)",
+                          "contentType": "application/json",
+                          "body": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgImVuZHBvaW50IjogInVzZXJzIiwKICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMiLAogICJoZWFkZXJzIjoge30sCiAgImJvZHkiOiB7CiAgICAidXNlciI6IHsKICAgICAgInVzZXJuYW1lIjogImFwaV91c2VyXzE3NzgyMzQ3MjY5MDUiLAogICAgICAiZW1haWwiOiAiYXBpXzE3NzgyMzQ3MjY5MDVAdGVzdC5jb20iLAogICAgICAicGFzc3dvcmQiOiAiUGFzc3dvcmQxMjMhIgogICAgfQogIH0sCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjAzOVoiCn0="
+                        },
+                        {
+                          "name": "API-1 Response (200)",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgInN0YXR1c1RleHQiOiAiT0siLAogICJoZWFkZXJzIjogewogICAgIngtcG93ZXJlZC1ieSI6ICJFeHByZXNzIiwKICAgICJhY2Nlc3MtY29udHJvbC1hbGxvdy1vcmlnaW4iOiAiKiIsCiAgICAidmFyeSI6ICJYLUhUVFAtTWV0aG9kLU92ZXJyaWRlIiwKICAgICJjb250ZW50LXR5cGUiOiAiYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOCIsCiAgICAiY29udGVudC1sZW5ndGgiOiAiMzAxIiwKICAgICJldGFnIjogIlcvXCIxMmQtSHRidkEzdkVsN05SRTlLZk9SelN3QVwiIiwKICAgICJkYXRlIjogIkZyaSwgMDggTWF5IDIwMjYgMTA6MDU6MjEgR01UIiwKICAgICJjb25uZWN0aW9uIjogImtlZXAtYWxpdmUiLAogICAgImtlZXAtYWxpdmUiOiAidGltZW91dD01IgogIH0sCiAgImJvZHkiOiB7CiAgICAidXNlciI6IHsKICAgICAgInVzZXJuYW1lIjogImFwaV91c2VyXzE3NzgyMzQ3MjY5MDUiLAogICAgICAiZW1haWwiOiAiYXBpXzE3NzgyMzQ3MjY5MDVAdGVzdC5jb20iLAogICAgICAidG9rZW4iOiAiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBaQ0k2TWpFc0luVnpaWEp1WVcxbElqb2lZWEJwWDNWelpYSmZNVGMzT0RJek5EY3lOamt3TlNJc0ltVjRjQ0k2TVRjNE16UXhPRGN5TVN3aWFXRjBJam94TnpjNE1qTTBOekl4ZlEuM25adW9ONjFBTEdZMlRUYXAyRkM3UDdTMnA1MGJTVWhCbWlNeHdtSzhDMCIsCiAgICAgICJiaW8iOiAiIiwKICAgICAgImltYWdlIjogIiIKICAgIH0KICB9LAogICJ0aW1lc3RhbXAiOiAiMjAyNi0wNS0wOFQxMDowNToyMS4wNDBaIgp9"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--f247b-ey-Step-1-User-Registration-API/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "66a77179d84ec27f9628-f38c0ee891d4fd34973a",
+              "file": "api/ConduitApiE2E.spec.ts",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "Step 2: User Login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API",
+                  "projectName": "API",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 133,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-08T10:05:21.138Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "API-1 Request (POST users/login)",
+                          "contentType": "application/json",
+                          "body": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgImVuZHBvaW50IjogInVzZXJzL2xvZ2luIiwKICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMvbG9naW4iLAogICJoZWFkZXJzIjoge30sCiAgImJvZHkiOiB7CiAgICAidXNlciI6IHsKICAgICAgImVtYWlsIjogImFwaV8xNzc4MjM0NzI2OTA1QHRlc3QuY29tIiwKICAgICAgInBhc3N3b3JkIjogIlBhc3N3b3JkMTIzISIKICAgIH0KICB9LAogICJ0aW1lc3RhbXAiOiAiMjAyNi0wNS0wOFQxMDowNToyMS4yNTdaIgp9"
+                        },
+                        {
+                          "name": "API-1 Response (200)",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgInN0YXR1c1RleHQiOiAiT0siLAogICJoZWFkZXJzIjogewogICAgIngtcG93ZXJlZC1ieSI6ICJFeHByZXNzIiwKICAgICJhY2Nlc3MtY29udHJvbC1hbGxvdy1vcmlnaW4iOiAiKiIsCiAgICAidmFyeSI6ICJYLUhUVFAtTWV0aG9kLU92ZXJyaWRlIiwKICAgICJjb250ZW50LXR5cGUiOiAiYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOCIsCiAgICAiY29udGVudC1sZW5ndGgiOiAiMzA1IiwKICAgICJldGFnIjogIlcvXCIxMzEtbDJyeEdUWmlTYW5jaUpqdEtMeTNCUVwiIiwKICAgICJkYXRlIjogIkZyaSwgMDggTWF5IDIwMjYgMTA6MDU6MjEgR01UIiwKICAgICJjb25uZWN0aW9uIjogImtlZXAtYWxpdmUiLAogICAgImtlZXAtYWxpdmUiOiAidGltZW91dD01IgogIH0sCiAgImJvZHkiOiB7CiAgICAidXNlciI6IHsKICAgICAgInVzZXJuYW1lIjogImFwaV91c2VyXzE3NzgyMzQ3MjY5MDUiLAogICAgICAiZW1haWwiOiAiYXBpXzE3NzgyMzQ3MjY5MDVAdGVzdC5jb20iLAogICAgICAidG9rZW4iOiAiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBaQ0k2TWpFc0luVnpaWEp1WVcxbElqb2lZWEJwWDNWelpYSmZNVGMzT0RJek5EY3lOamt3TlNJc0ltVjRjQ0k2TVRjNE16UXhPRGN5TVN3aWFXRjBJam94TnpjNE1qTTBOekl4ZlEuM25adW9ONjFBTEdZMlRUYXAyRkM3UDdTMnA1MGJTVWhCbWlNeHdtSzhDMCIsCiAgICAgICJiaW8iOiBudWxsLAogICAgICAiaW1hZ2UiOiBudWxsCiAgICB9CiAgfSwKICAidGltZXN0YW1wIjogIjIwMjYtMDUtMDhUMTA6MDU6MjEuMjU4WiIKfQ=="
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit-API-E2E-Journey-Step-2-User-Login-API/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "66a77179d84ec27f9628-90aae97ef4f617e2c052",
+              "file": "api/ConduitApiE2E.spec.ts",
+              "line": 43,
+              "column": 5
+            },
+            {
+              "title": "Step 3: Create Article",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API",
+                  "projectName": "API",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 63,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-08T10:05:21.327Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "API-1 Request (POST articles)",
+                          "contentType": "application/json",
+                          "body": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgImVuZHBvaW50IjogImFydGljbGVzIiwKICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvYXJ0aWNsZXMiLAogICJoZWFkZXJzIjogewogICAgIkF1dGhvcml6YXRpb24iOiAiVG9rZW4gZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBaQ0k2TWpFc0luVnpaWEp1WVcxbElqb2lZWEJwWDNWelpYSmZNVGMzT0RJek5EY3lOamt3TlNJc0ltVjRjQ0k2TVRjNE16UXhPRGN5TVN3aWFXRjBJam94TnpjNE1qTTBOekl4ZlEuM25adW9ONjFBTEdZMlRUYXAyRkM3UDdTMnA1MGJTVWhCbWlNeHdtSzhDMCIKICB9LAogICJib2R5IjogewogICAgImFydGljbGUiOiB7CiAgICAgICJ0aXRsZSI6ICJBUEkgQXJ0aWNsZSAxNzc4MjM0NzI2OTA1IiwKICAgICAgImRlc2NyaXB0aW9uIjogIkFQSSBEZXNjcmlwdGlvbiIsCiAgICAgICJib2R5IjogIkFQSSBCb2R5IGNvbnRlbnQiLAogICAgICAidGFnTGlzdCI6IFsKICAgICAgICAiYXBpIiwKICAgICAgICAidGVzdCIKICAgICAgXQogICAgfQogIH0sCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjM4MVoiCn0="
+                        },
+                        {
+                          "name": "API-1 Response (200)",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgInN0YXR1c1RleHQiOiAiT0siLAogICJoZWFkZXJzIjogewogICAgIngtcG93ZXJlZC1ieSI6ICJFeHByZXNzIiwKICAgICJhY2Nlc3MtY29udHJvbC1hbGxvdy1vcmlnaW4iOiAiKiIsCiAgICAidmFyeSI6ICJYLUhUVFAtTWV0aG9kLU92ZXJyaWRlIiwKICAgICJjb250ZW50LXR5cGUiOiAiYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOCIsCiAgICAiY29udGVudC1sZW5ndGgiOiAiNDIxIiwKICAgICJldGFnIjogIlcvXCIxYTUtWko1N0xHUGl6RWhjTmw4NjY2aFc3d1wiIiwKICAgICJkYXRlIjogIkZyaSwgMDggTWF5IDIwMjYgMTA6MDU6MjEgR01UIiwKICAgICJjb25uZWN0aW9uIjogImtlZXAtYWxpdmUiLAogICAgImtlZXAtYWxpdmUiOiAidGltZW91dD01IgogIH0sCiAgImJvZHkiOiB7CiAgICAiYXJ0aWNsZSI6IHsKICAgICAgInNsdWciOiAiYXBpLWFydGljbGUtMTc3ODIzNDcyNjkwNS1zNWF4bjIiLAogICAgICAidGl0bGUiOiAiQVBJIEFydGljbGUgMTc3ODIzNDcyNjkwNSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJBUEkgRGVzY3JpcHRpb24iLAogICAgICAiYm9keSI6ICJBUEkgQm9keSBjb250ZW50IiwKICAgICAgImNyZWF0ZWRBdCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjM2NloiLAogICAgICAidXBkYXRlZEF0IjogIjIwMjYtMDUtMDhUMTA6MDU6MjEuMzY2WiIsCiAgICAgICJ0YWdMaXN0IjogW10sCiAgICAgICJmYXZvcml0ZWQiOiBmYWxzZSwKICAgICAgImZhdm9yaXRlc0NvdW50IjogMCwKICAgICAgImF1dGhvciI6IHsKICAgICAgICAidXNlcm5hbWUiOiAiYXBpX3VzZXJfMTc3ODIzNDcyNjkwNSIsCiAgICAgICAgImJpbyI6IG51bGwsCiAgICAgICAgImltYWdlIjogImh0dHBzOi8vc3RhdGljLnByb2R1Y3Rpb25yZWFkeS5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZyIsCiAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgIH0KICAgIH0KICB9LAogICJ0aW1lc3RhbXAiOiAiMjAyNi0wNS0wOFQxMDowNToyMS4zODNaIgp9"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--1950d-urney-Step-3-Create-Article-API/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "66a77179d84ec27f9628-cd2ea0e75e727c64a7e3",
+              "file": "api/ConduitApiE2E.spec.ts",
+              "line": 57,
+              "column": 5
+            },
+            {
+              "title": "Step 4: Update Article",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API",
+                  "projectName": "API",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 105,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-08T10:05:21.440Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "API-1 Request (PUT articles/api-article-1778234726905-s5axn2)",
+                          "contentType": "application/json",
+                          "body": "ewogICJtZXRob2QiOiAiUFVUIiwKICAiZW5kcG9pbnQiOiAiYXJ0aWNsZXMvYXBpLWFydGljbGUtMTc3ODIzNDcyNjkwNS1zNWF4bjIiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9hcnRpY2xlcy9hcGktYXJ0aWNsZS0xNzc4MjM0NzI2OTA1LXM1YXhuMiIsCiAgImhlYWRlcnMiOiB7CiAgICAiQXV0aG9yaXphdGlvbiI6ICJUb2tlbiBleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZNakVzSW5WelpYSnVZVzFsSWpvaVlYQnBYM1Z6WlhKZk1UYzNPREl6TkRjeU5qa3dOU0lzSW1WNGNDSTZNVGM0TXpReE9EY3lNU3dpYVdGMElqb3hOemM0TWpNME56SXhmUS4zblp1b042MUFMR1kyVFRhcDJGQzdQN1MycDUwYlNVaEJtaU14d21LOEMwIgogIH0sCiAgImJvZHkiOiB7CiAgICAiYXJ0aWNsZSI6IHsKICAgICAgInRpdGxlIjogIlVwZGF0ZWQgQVBJIEFydGljbGUgMTc3ODIzNDcyNjkwNSIsCiAgICAgICJib2R5IjogIlVwZGF0ZWQgQVBJIEJvZHkgY29udGVudCIKICAgIH0KICB9LAogICJ0aW1lc3RhbXAiOiAiMjAyNi0wNS0wOFQxMDowNToyMS40OThaIgp9"
+                        },
+                        {
+                          "name": "API-1 Response (200)",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgInN0YXR1c1RleHQiOiAiT0siLAogICJoZWFkZXJzIjogewogICAgIngtcG93ZXJlZC1ieSI6ICJFeHByZXNzIiwKICAgICJhY2Nlc3MtY29udHJvbC1hbGxvdy1vcmlnaW4iOiAiKiIsCiAgICAiY29udGVudC10eXBlIjogImFwcGxpY2F0aW9uL2pzb247IGNoYXJzZXQ9dXRmLTgiLAogICAgImNvbnRlbnQtbGVuZ3RoIjogIjQ0OSIsCiAgICAiZXRhZyI6ICJXL1wiMWMxLWlWU3hYVlBWYStsU3FUNE5hcmtuclFcIiIsCiAgICAiZGF0ZSI6ICJGcmksIDA4IE1heSAyMDI2IDEwOjA1OjIxIEdNVCIsCiAgICAiY29ubmVjdGlvbiI6ICJrZWVwLWFsaXZlIiwKICAgICJrZWVwLWFsaXZlIjogInRpbWVvdXQ9NSIKICB9LAogICJib2R5IjogewogICAgImFydGljbGUiOiB7CiAgICAgICJzbHVnIjogImFwaS1hcnRpY2xlLTE3NzgyMzQ3MjY5MDUtczVheG4yIiwKICAgICAgInRpdGxlIjogIlVwZGF0ZWQgQVBJIEFydGljbGUgMTc3ODIzNDcyNjkwNSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJBUEkgRGVzY3JpcHRpb24iLAogICAgICAiYm9keSI6ICJVcGRhdGVkIEFQSSBCb2R5IGNvbnRlbnQiLAogICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMTA6MDU6MjEuMzY2WiIsCiAgICAgICJ1cGRhdGVkQXQiOiAiMjAyNi0wNS0wOFQxMDowNToyMS40ODNaIiwKICAgICAgInRhZ0xpc3QiOiBbCiAgICAgICAgImFwaSIsCiAgICAgICAgInRlc3QiCiAgICAgIF0sCiAgICAgICJmYXZvcml0ZWQiOiBmYWxzZSwKICAgICAgImZhdm9yaXRlc0NvdW50IjogMCwKICAgICAgImF1dGhvciI6IHsKICAgICAgICAidXNlcm5hbWUiOiAiYXBpX3VzZXJfMTc3ODIzNDcyNjkwNSIsCiAgICAgICAgImJpbyI6IG51bGwsCiAgICAgICAgImltYWdlIjogImh0dHBzOi8vc3RhdGljLnByb2R1Y3Rpb25yZWFkeS5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZyIsCiAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgIH0KICAgIH0KICB9LAogICJ0aW1lc3RhbXAiOiAiMjAyNi0wNS0wOFQxMDowNToyMS40OTlaIgp9"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--90523-urney-Step-4-Update-Article-API/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "66a77179d84ec27f9628-7c89b46c053910498407",
+              "file": "api/ConduitApiE2E.spec.ts",
+              "line": 74,
+              "column": 5
+            },
+            {
+              "title": "Step 5: View Articles",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API",
+                  "projectName": "API",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 108,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-08T10:05:21.612Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "API-1 Request (GET articles)",
+                          "contentType": "application/json",
+                          "body": "ewogICJtZXRob2QiOiAiR0VUIiwKICAiZW5kcG9pbnQiOiAiYXJ0aWNsZXMiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9hcnRpY2xlcyIsCiAgImhlYWRlcnMiOiB7CiAgICAiQXV0aG9yaXphdGlvbiI6ICJUb2tlbiBleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZNakVzSW5WelpYSnVZVzFsSWpvaVlYQnBYM1Z6WlhKZk1UYzNPREl6TkRjeU5qa3dOU0lzSW1WNGNDSTZNVGM0TXpReE9EY3lNU3dpYVdGMElqb3hOemM0TWpNME56SXhmUS4zblp1b042MUFMR1kyVFRhcDJGQzdQN1MycDUwYlNVaEJtaU14d21LOEMwIgogIH0sCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjcyNloiCn0="
+                        },
+                        {
+                          "name": "API-1 Response (200)",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgInN0YXR1c1RleHQiOiAiT0siLAogICJoZWFkZXJzIjogewogICAgIngtcG93ZXJlZC1ieSI6ICJFeHByZXNzIiwKICAgICJhY2Nlc3MtY29udHJvbC1hbGxvdy1vcmlnaW4iOiAiKiIsCiAgICAiY29udGVudC10eXBlIjogImFwcGxpY2F0aW9uL2pzb247IGNoYXJzZXQ9dXRmLTgiLAogICAgImNvbnRlbnQtbGVuZ3RoIjogIjQyODYiLAogICAgImV0YWciOiAiVy9cIjEwYmUtbjRQb3NtTmxKb2xYZnVlWTc4SG1JZ1wiIiwKICAgICJkYXRlIjogIkZyaSwgMDggTWF5IDIwMjYgMTA6MDU6MjEgR01UIiwKICAgICJjb25uZWN0aW9uIjogImtlZXAtYWxpdmUiLAogICAgImtlZXAtYWxpdmUiOiAidGltZW91dD01IgogIH0sCiAgImJvZHkiOiB7CiAgICAiYXJ0aWNsZXMiOiBbCiAgICAgIHsKICAgICAgICAic2x1ZyI6ICJhcGktYXJ0aWNsZS0xNzc4MjM0NzI2OTA1LXM1YXhuMiIsCiAgICAgICAgInRpdGxlIjogIlVwZGF0ZWQgQVBJIEFydGljbGUgMTc3ODIzNDcyNjkwNSIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIkFQSSBEZXNjcmlwdGlvbiIsCiAgICAgICAgImJvZHkiOiAiVXBkYXRlZCBBUEkgQm9keSBjb250ZW50IiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMTA6MDU6MjEuMzY2WiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjQ4M1oiLAogICAgICAgICJ0YWdMaXN0IjogWwogICAgICAgICAgImFwaSIsCiAgICAgICAgICAidGVzdCIKICAgICAgICBdLAogICAgICAgICJmYXZvcml0ZWQiOiBmYWxzZSwKICAgICAgICAiZmF2b3JpdGVzQ291bnQiOiAwLAogICAgICAgICJhdXRob3IiOiB7CiAgICAgICAgICAidXNlcm5hbWUiOiAiYXBpX3VzZXJfMTc3ODIzNDcyNjkwNSIsCiAgICAgICAgICAiYmlvIjogbnVsbCwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgInNsdWciOiAibm8tdG9rZW4tcTNpbGxiIiwKICAgICAgICAidGl0bGUiOiAiTm8gVG9rZW4iLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJEZXNjIiwKICAgICAgICAiYm9keSI6ICJCb2R5IiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMTA6MDM6MzYuMzA3WiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI2LTA1LTA4VDEwOjAzOjM2LjMwN1oiLAogICAgICAgICJ0YWdMaXN0IjogW10sCiAgICAgICAgImZhdm9yaXRlZCI6IGZhbHNlLAogICAgICAgICJmYXZvcml0ZXNDb3VudCI6IDAsCiAgICAgICAgImF1dGhvciI6IHsKICAgICAgICAgICJ1c2VybmFtZSI6ICJjb25kdWl0dXNlciIsCiAgICAgICAgICAiYmlvIjogImFiZGJhIiwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgInNsdWciOiAibm8tdG9rZW4tYWoyNWllIiwKICAgICAgICAidGl0bGUiOiAiTm8gVG9rZW4iLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJEZXNjIiwKICAgICAgICAiYm9keSI6ICJCb2R5IiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMTA6MDM6MzIuNjU5WiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI2LTA1LTA4VDEwOjAzOjMyLjY1OVoiLAogICAgICAgICJ0YWdMaXN0IjogW10sCiAgICAgICAgImZhdm9yaXRlZCI6IGZhbHNlLAogICAgICAgICJmYXZvcml0ZXNDb3VudCI6IDAsCiAgICAgICAgImF1dGhvciI6IHsKICAgICAgICAgICJ1c2VybmFtZSI6ICJjb25kdWl0dXNlciIsCiAgICAgICAgICAiYmlvIjogImFiZGJhIiwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgInNsdWciOiAiZ2xvYmFsLWF1dGgtYXJ0aWNsZS0xNzc4MjM0NDQ4NDUyLXJmMGlsdCIsCiAgICAgICAgInRpdGxlIjogIkdsb2JhbCBBdXRoIEFydGljbGUgMTc3ODIzNDQ0ODQ1MiIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIlRlc3RpbmcgZ2xvYmFsIGF1dGgiLAogICAgICAgICJib2R5IjogIlRoaXMgcG9zdCB3YXMgY3JlYXRlZCB1c2luZyB0aGUgdG9rZW4gZnJvbSBhdXRoLmpzb24iLAogICAgICAgICJjcmVhdGVkQXQiOiAiMjAyNi0wNS0wOFQxMDowMDo0OC40NjNaIiwKICAgICAgICAidXBkYXRlZEF0IjogIjIwMjYtMDUtMDhUMTA6MDA6NDguNDYzWiIsCiAgICAgICAgInRhZ0xpc3QiOiBbCiAgICAgICAgICAiZ2xvYmFsIiwKICAgICAgICAgICJhdXRoIgogICAgICAgIF0sCiAgICAgICAgImZhdm9yaXRlZCI6IGZhbHNlLAogICAgICAgICJmYXZvcml0ZXNDb3VudCI6IDAsCiAgICAgICAgImF1dGhvciI6IHsKICAgICAgICAgICJ1c2VybmFtZSI6ICJjb25kdWl0dXNlciIsCiAgICAgICAgICAiYmlvIjogImFiZGJhIiwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgInNsdWciOiAiZTJlLXBvc3QtMTc3ODIzNDAzOTAzMy1mZWVheDUiLAogICAgICAgICJ0aXRsZSI6ICJFMkUgUG9zdCAxNzc4MjM0MDM5MDMzIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiRTJFIERlc2NyaXB0aW9uIiwKICAgICAgICAiYm9keSI6ICJFMkUgQm9keSBjb250ZW50IiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMDk6NTQ6MDIuOTYyWiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI2LTA1LTA4VDA5OjU0OjAyLjk2MloiLAogICAgICAgICJ0YWdMaXN0IjogW10sCiAgICAgICAgImZhdm9yaXRlZCI6IGZhbHNlLAogICAgICAgICJmYXZvcml0ZXNDb3VudCI6IDAsCiAgICAgICAgImF1dGhvciI6IHsKICAgICAgICAgICJ1c2VybmFtZSI6ICJmYXZfdXNlcl8xNzc4MjM0MDM5MDMzIiwKICAgICAgICAgICJiaW8iOiBudWxsLAogICAgICAgICAgImltYWdlIjogImh0dHBzOi8vc3RhdGljLnByb2R1Y3Rpb25yZWFkeS5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZyIsCiAgICAgICAgICAiZm9sbG93aW5nIjogZmFsc2UKICAgICAgICB9CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAic2x1ZyI6ICJ0ZXN0LWFydGljbGUtaWFuZHViIiwKICAgICAgICAidGl0bGUiOiAiVGVzdCBBcnRpY2xlIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiRGVzYyIsCiAgICAgICAgImJvZHkiOiAiQm9keSIsCiAgICAgICAgImNyZWF0ZWRBdCI6ICIyMDI2LTA1LTA4VDA5OjQ2OjU4LjA2NFoiLAogICAgICAgICJ1cGRhdGVkQXQiOiAiMjAyNi0wNS0wOFQwOTo0Njo1OC4wNjRaIiwKICAgICAgICAidGFnTGlzdCI6IFtdLAogICAgICAgICJmYXZvcml0ZWQiOiBmYWxzZSwKICAgICAgICAiZmF2b3JpdGVzQ291bnQiOiAwLAogICAgICAgICJhdXRob3IiOiB7CiAgICAgICAgICAidXNlcm5hbWUiOiAidGVzdHVzZXJfMTI0IiwKICAgICAgICAgICJiaW8iOiBudWxsLAogICAgICAgICAgImltYWdlIjogImh0dHBzOi8vc3RhdGljLnByb2R1Y3Rpb25yZWFkeS5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZyIsCiAgICAgICAgICAiZm9sbG93aW5nIjogZmFsc2UKICAgICAgICB9CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAic2x1ZyI6ICJlMmUtcG9zdC0xNzc4MjMzMDI1NjAxLWJwdWMydSIsCiAgICAgICAgInRpdGxlIjogIkUyRSBQb3N0IDE3NzgyMzMwMjU2MDEiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJFMkUgRGVzY3JpcHRpb24iLAogICAgICAgICJib2R5IjogIkUyRSBCb2R5IGNvbnRlbnQiLAogICAgICAgICJjcmVhdGVkQXQiOiAiMjAyNi0wNS0wOFQwOTozNzowOS43MjRaIiwKICAgICAgICAidXBkYXRlZEF0IjogIjIwMjYtMDUtMDhUMDk6Mzc6MDkuNzI0WiIsCiAgICAgICAgInRhZ0xpc3QiOiBbXSwKICAgICAgICAiZmF2b3JpdGVkIjogZmFsc2UsCiAgICAgICAgImZhdm9yaXRlc0NvdW50IjogMCwKICAgICAgICAiYXV0aG9yIjogewogICAgICAgICAgInVzZXJuYW1lIjogImZhdl91c2VyXzE3NzgyMzMwMjU2MDEiLAogICAgICAgICAgImJpbyI6IG51bGwsCiAgICAgICAgICAiaW1hZ2UiOiAiaHR0cHM6Ly9zdGF0aWMucHJvZHVjdGlvbnJlYWR5LmlvL2ltYWdlcy9zbWlsZXktY3lydXMuanBnIiwKICAgICAgICAgICJmb2xsb3dpbmciOiBmYWxzZQogICAgICAgIH0KICAgICAgfSwKICAgICAgewogICAgICAgICJzbHVnIjogImUyZS1wb3N0LTE3NzgyMzI4Mjc0MzAtb2ljMXdxIiwKICAgICAgICAidGl0bGUiOiAiRTJFIFBvc3QgMTc3ODIzMjgyNzQzMCIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIkUyRSBEZXNjcmlwdGlvbiIsCiAgICAgICAgImJvZHkiOiAiRTJFIEJvZHkgY29udGVudCIsCiAgICAgICAgImNyZWF0ZWRBdCI6ICIyMDI2LTA1LTA4VDA5OjMzOjUxLjQ4OFoiLAogICAgICAgICJ1cGRhdGVkQXQiOiAiMjAyNi0wNS0wOFQwOTozMzo1MS40ODhaIiwKICAgICAgICAidGFnTGlzdCI6IFtdLAogICAgICAgICJmYXZvcml0ZWQiOiBmYWxzZSwKICAgICAgICAiZmF2b3JpdGVzQ291bnQiOiAwLAogICAgICAgICJhdXRob3IiOiB7CiAgICAgICAgICAidXNlcm5hbWUiOiAiZmF2X3VzZXJfMTc3ODIzMjgyNzQzMCIsCiAgICAgICAgICAiYmlvIjogbnVsbCwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgInNsdWciOiAiLWQ5YW53MyIsCiAgICAgICAgInRpdGxlIjogIiIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIkRlc2NyaXB0aW9uIiwKICAgICAgICAiYm9keSI6ICJCb2R5IiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMDk6MzE6MzcuNjczWiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI2LTA1LTA4VDA5OjMxOjM3LjY3M1oiLAogICAgICAgICJ0YWdMaXN0IjogW10sCiAgICAgICAgImZhdm9yaXRlZCI6IGZhbHNlLAogICAgICAgICJmYXZvcml0ZXNDb3VudCI6IDAsCiAgICAgICAgImF1dGhvciI6IHsKICAgICAgICAgICJ1c2VybmFtZSI6ICJjb25kdWl0dXNlciIsCiAgICAgICAgICAiYmlvIjogImFiZGJhIiwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgInNsdWciOiAiLWp3YzB0NSIsCiAgICAgICAgInRpdGxlIjogIiIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIkRlc2NyaXB0aW9uIiwKICAgICAgICAiYm9keSI6ICJCb2R5IiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMDk6MzE6MjkuMTU4WiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI2LTA1LTA4VDA5OjMxOjI5LjE1OFoiLAogICAgICAgICJ0YWdMaXN0IjogW10sCiAgICAgICAgImZhdm9yaXRlZCI6IGZhbHNlLAogICAgICAgICJmYXZvcml0ZXNDb3VudCI6IDAsCiAgICAgICAgImF1dGhvciI6IHsKICAgICAgICAgICJ1c2VybmFtZSI6ICJjb25kdWl0dXNlciIsCiAgICAgICAgICAiYmlvIjogImFiZGJhIiwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgInNsdWciOiAidGVzdC1hcnRpY2xlLTEyMy1oYjA1OHEiLAogICAgICAgICJ0aXRsZSI6ICJUZXN0IEFydGljbGUgMTIzIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiVGhpcyBpcyBhIHRlc3QgZGVzY3JpcHRpb24uIiwKICAgICAgICAiYm9keSI6ICJUaGlzIGlzIHRoZSBib2R5IG9mIHRoZSB0ZXN0IGFydGljbGUuIiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMDk6MjE6NDcuODcwWiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI2LTA1LTA4VDA5OjIxOjQ3Ljg3MFoiLAogICAgICAgICJ0YWdMaXN0IjogW10sCiAgICAgICAgImZhdm9yaXRlZCI6IGZhbHNlLAogICAgICAgICJmYXZvcml0ZXNDb3VudCI6IDAsCiAgICAgICAgImF1dGhvciI6IHsKICAgICAgICAgICJ1c2VybmFtZSI6ICJjb25kdWl0dXNlciIsCiAgICAgICAgICAiYmlvIjogImFiZGJhIiwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9CiAgICBdLAogICAgImFydGljbGVzQ291bnQiOiAxMQogIH0sCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjcyN1oiCn0="
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--0f61c-ourney-Step-5-View-Articles-API/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "66a77179d84ec27f9628-252d51c2292639edd43a",
+              "file": "api/ConduitApiE2E.spec.ts",
+              "line": 89,
+              "column": 5
+            },
+            {
+              "title": "Step 6: Delete Article",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API",
+                  "projectName": "API",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 53,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-08T10:05:21.776Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "API-1 Request (DELETE articles/api-article-1778234726905-s5axn2)",
+                          "contentType": "application/json",
+                          "body": "ewogICJtZXRob2QiOiAiREVMRVRFIiwKICAiZW5kcG9pbnQiOiAiYXJ0aWNsZXMvYXBpLWFydGljbGUtMTc3ODIzNDcyNjkwNS1zNWF4bjIiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9hcnRpY2xlcy9hcGktYXJ0aWNsZS0xNzc4MjM0NzI2OTA1LXM1YXhuMiIsCiAgImhlYWRlcnMiOiB7CiAgICAiQXV0aG9yaXphdGlvbiI6ICJUb2tlbiBleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZNakVzSW5WelpYSnVZVzFsSWpvaVlYQnBYM1Z6WlhKZk1UYzNPREl6TkRjeU5qa3dOU0lzSW1WNGNDSTZNVGM0TXpReE9EY3lNU3dpYVdGMElqb3hOemM0TWpNME56SXhmUS4zblp1b042MUFMR1kyVFRhcDJGQzdQN1MycDUwYlNVaEJtaU14d21LOEMwIgogIH0sCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjgyMVoiCn0="
+                        },
+                        {
+                          "name": "API-1 Response (204)",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiAyMDQsCiAgInN0YXR1c1RleHQiOiAiTm8gQ29udGVudCIsCiAgImhlYWRlcnMiOiB7CiAgICAieC1wb3dlcmVkLWJ5IjogIkV4cHJlc3MiLAogICAgImFjY2Vzcy1jb250cm9sLWFsbG93LW9yaWdpbiI6ICIqIiwKICAgICJldGFnIjogIlcvXCJhLW9RRE9WNTBlMU1OMkgvTjhHWWkrOHdcIiIsCiAgICAiZGF0ZSI6ICJGcmksIDA4IE1heSAyMDI2IDEwOjA1OjIxIEdNVCIsCiAgICAiY29ubmVjdGlvbiI6ICJrZWVwLWFsaXZlIiwKICAgICJrZWVwLWFsaXZlIjogInRpbWVvdXQ9NSIKICB9LAogICJib2R5IjogIiIsCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjgyMloiCn0="
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--15851-urney-Step-6-Delete-Article-API/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "66a77179d84ec27f9628-46d8dae116f3030890af",
+              "file": "api/ConduitApiE2E.spec.ts",
+              "line": 104,
+              "column": 5
+            },
+            {
+              "title": "Step 7: Verify Deletion",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API",
+                  "projectName": "API",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 110,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-08T10:05:21.868Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "API-1 Request (GET articles/api-article-1778234726905-s5axn2)",
+                          "contentType": "application/json",
+                          "body": "ewogICJtZXRob2QiOiAiR0VUIiwKICAiZW5kcG9pbnQiOiAiYXJ0aWNsZXMvYXBpLWFydGljbGUtMTc3ODIzNDcyNjkwNS1zNWF4bjIiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9hcnRpY2xlcy9hcGktYXJ0aWNsZS0xNzc4MjM0NzI2OTA1LXM1YXhuMiIsCiAgImhlYWRlcnMiOiB7fSwKICAidGltZXN0YW1wIjogIjIwMjYtMDUtMDhUMTA6MDU6MjEuOTkzWiIKfQ=="
+                        },
+                        {
+                          "name": "API-1 Response (404)",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiA0MDQsCiAgInN0YXR1c1RleHQiOiAiTm90IEZvdW5kIiwKICAiaGVhZGVycyI6IHsKICAgICJ4LXBvd2VyZWQtYnkiOiAiRXhwcmVzcyIsCiAgICAiYWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2luIjogIioiLAogICAgImNvbnRlbnQtdHlwZSI6ICJ0ZXh0L3BsYWluOyBjaGFyc2V0PXV0Zi04IiwKICAgICJjb250ZW50LWxlbmd0aCI6ICI5IiwKICAgICJldGFnIjogIlcvXCI5LW5SNnRjK1o0K2k5UnB3cVRPd3Z3RndcIiIsCiAgICAiZGF0ZSI6ICJGcmksIDA4IE1heSAyMDI2IDEwOjA1OjIxIEdNVCIsCiAgICAiY29ubmVjdGlvbiI6ICJrZWVwLWFsaXZlIiwKICAgICJrZWVwLWFsaXZlIjogInRpbWVvdXQ9NSIKICB9LAogICJib2R5IjogIk5vdCBGb3VuZCIsCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjk5NFoiCn0="
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--22a74-rney-Step-7-Verify-Deletion-API/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "66a77179d84ec27f9628-45f54aefd2dce8916feb",
+              "file": "api/ConduitApiE2E.spec.ts",
+              "line": 114,
+              "column": 5
+            }
+          ]
+        },
+        {
+          "title": "Conduit API Negative Tests",
+          "file": "api/ConduitApiE2E.spec.ts",
+          "line": 120,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should not register with existing email",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API",
+                  "projectName": "API",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 123,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-08T10:05:22.054Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "API-1 Request (POST users)",
+                          "contentType": "application/json",
+                          "body": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgImVuZHBvaW50IjogInVzZXJzIiwKICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMiLAogICJoZWFkZXJzIjoge30sCiAgImJvZHkiOiB7CiAgICAidXNlciI6IHsKICAgICAgInVzZXJuYW1lIjogImR1cGxpY2F0ZSIsCiAgICAgICJlbWFpbCI6ICJjb25kdWl0dXNlckB0ZXN0LmNvbSIsCiAgICAgICJwYXNzd29yZCI6ICJQYXNzd29yZDEyMyEiCiAgICB9CiAgfSwKICAidGltZXN0YW1wIjogIjIwMjYtMDUtMDhUMTA6MDU6MjIuMTc4WiIKfQ=="
+                        },
+                        {
+                          "name": "API-1 Response (404)",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiA0MDQsCiAgInN0YXR1c1RleHQiOiAiTm90IEZvdW5kIiwKICAiaGVhZGVycyI6IHsKICAgICJ4LXBvd2VyZWQtYnkiOiAiRXhwcmVzcyIsCiAgICAiYWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2luIjogIioiLAogICAgInZhcnkiOiAiWC1IVFRQLU1ldGhvZC1PdmVycmlkZSIsCiAgICAiY29udGVudC10eXBlIjogInRleHQvaHRtbDsgY2hhcnNldD11dGYtOCIsCiAgICAiY29udGVudC1sZW5ndGgiOiAiMzEiLAogICAgImV0YWciOiAiVy9cIjFmLWVUd0oyS1d4WEczZUFpOXh0TW5STFFcIiIsCiAgICAiZGF0ZSI6ICJGcmksIDA4IE1heSAyMDI2IDEwOjA1OjIyIEdNVCIsCiAgICAiY29ubmVjdGlvbiI6ICJrZWVwLWFsaXZlIiwKICAgICJrZWVwLWFsaXZlIjogInRpbWVvdXQ9NSIKICB9LAogICJib2R5IjogbnVsbCwKICAidGltZXN0YW1wIjogIjIwMjYtMDUtMDhUMTA6MDU6MjIuMTc5WiIKfQ=="
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--3a599-egister-with-existing-email-API/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "66a77179d84ec27f9628-4368eafdad535680d899",
+              "file": "api/ConduitApiE2E.spec.ts",
+              "line": 121,
+              "column": 5
+            },
+            {
+              "title": "should not create article without token",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API",
+                  "projectName": "API",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 56,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-08T10:05:22.219Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "API-1 Request (POST articles)",
+                          "contentType": "application/json",
+                          "body": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgImVuZHBvaW50IjogImFydGljbGVzIiwKICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvYXJ0aWNsZXMiLAogICJoZWFkZXJzIjogewogICAgIkF1dGhvcml6YXRpb24iOiAiIgogIH0sCiAgImJvZHkiOiB7CiAgICAiYXJ0aWNsZSI6IHsKICAgICAgInRpdGxlIjogIk5vIFRva2VuIiwKICAgICAgImRlc2NyaXB0aW9uIjogIkRlc2MiLAogICAgICAiYm9keSI6ICJCb2R5IgogICAgfQogIH0sCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIyLjI2MVoiCn0="
+                        },
+                        {
+                          "name": "API-1 Response (401)",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiA0MDEsCiAgInN0YXR1c1RleHQiOiAiVW5hdXRob3JpemVkIiwKICAiaGVhZGVycyI6IHsKICAgICJ4LXBvd2VyZWQtYnkiOiAiRXhwcmVzcyIsCiAgICAiYWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2luIjogIioiLAogICAgInZhcnkiOiAiWC1IVFRQLU1ldGhvZC1PdmVycmlkZSIsCiAgICAieC1jb250ZW50LXR5cGUtb3B0aW9ucyI6ICJub3NuaWZmIiwKICAgICJjb250ZW50LXR5cGUiOiAidGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04IiwKICAgICJkYXRlIjogIkZyaSwgMDggTWF5IDIwMjYgMTA6MDU6MjIgR01UIiwKICAgICJjb25uZWN0aW9uIjogImtlZXAtYWxpdmUiLAogICAgImtlZXAtYWxpdmUiOiAidGltZW91dD01IiwKICAgICJjb250ZW50LWxlbmd0aCI6ICIxMTA1NCIKICB9LAogICJib2R5IjogbnVsbCwKICAidGltZXN0YW1wIjogIjIwMjYtMDUtMDhUMTA6MDU6MjIuMjYyWiIKfQ=="
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--440e8-reate-article-without-token-API/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "66a77179d84ec27f9628-73cb751896341f41b97e",
+              "file": "api/ConduitApiE2E.spec.ts",
+              "line": 136,
+              "column": 5
+            },
+            {
+              "title": "should not login with invalid password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "API",
+                  "projectName": "API",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 123,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-08T10:05:22.331Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "API-1 Request (POST users/login)",
+                          "contentType": "application/json",
+                          "body": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgImVuZHBvaW50IjogInVzZXJzL2xvZ2luIiwKICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMvbG9naW4iLAogICJoZWFkZXJzIjoge30sCiAgImJvZHkiOiB7CiAgICAidXNlciI6IHsKICAgICAgImVtYWlsIjogImNvbmR1aXR1c2VyQHRlc3QuY29tIiwKICAgICAgInBhc3N3b3JkIjogIndyb25ncGFzc3dvcmQiCiAgICB9CiAgfSwKICAidGltZXN0YW1wIjogIjIwMjYtMDUtMDhUMTA6MDU6MjIuNTExWiIKfQ=="
+                        },
+                        {
+                          "name": "API-1 Response (422)",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiA0MjIsCiAgInN0YXR1c1RleHQiOiAiVW5wcm9jZXNzYWJsZSBFbnRpdHkiLAogICJoZWFkZXJzIjogewogICAgIngtcG93ZXJlZC1ieSI6ICJFeHByZXNzIiwKICAgICJhY2Nlc3MtY29udHJvbC1hbGxvdy1vcmlnaW4iOiAiKiIsCiAgICAidmFyeSI6ICJYLUhUVFAtTWV0aG9kLU92ZXJyaWRlIiwKICAgICJjb250ZW50LXR5cGUiOiAiYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOCIsCiAgICAiY29udGVudC1sZW5ndGgiOiAiNDUiLAogICAgImV0YWciOiAiVy9cIjJkLVNmV0NSRDdjM25oQWhCdHBIK0hpbWdcIiIsCiAgICAiZGF0ZSI6ICJGcmksIDA4IE1heSAyMDI2IDEwOjA1OjIyIEdNVCIsCiAgICAiY29ubmVjdGlvbiI6ICJrZWVwLWFsaXZlIiwKICAgICJrZWVwLWFsaXZlIjogInRpbWVvdXQ9NSIKICB9LAogICJib2R5IjogewogICAgImVycm9ycyI6IHsKICAgICAgImVtYWlsIG9yIHBhc3N3b3JkIjogImlzIGludmFsaWQiCiAgICB9CiAgfSwKICAidGltZXN0YW1wIjogIjIwMjYtMDUtMDhUMTA6MDU6MjIuNTEyWiIKfQ=="
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--f1c49-login-with-invalid-password-API/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "66a77179d84ec27f9628-ac84757dca51c459a8d8",
+              "file": "api/ConduitApiE2E.spec.ts",
+              "line": 152,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-08T10:05:17.978Z",
+    "duration": 4647.919,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
