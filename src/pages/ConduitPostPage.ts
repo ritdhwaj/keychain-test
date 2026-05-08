@@ -26,6 +26,7 @@ export class ConduitPostPage extends BasePage {
     private readonly commentInput: Locator;
     private readonly postCommentButton: Locator;
     private readonly deleteCommentIcon: Locator;
+    private readonly commentContent: Locator;
 
     constructor(page: Page) {
         super(page);
@@ -48,9 +49,14 @@ export class ConduitPostPage extends BasePage {
         this.commentInput = page.getByPlaceholder('Write a comment...');
         this.postCommentButton = page.getByRole('button', { name: 'Post Comment' });
         this.deleteCommentIcon = page.locator('.mod-options .ion-trash-a');
+        this.commentContent = page.locator('.card-text');
         
         logger.info('ConduitPostPage initialized');
     }
+
+    // Getters for assertions in tests
+    get titleLocator() { return this.articleTitle; }
+    get commentLocator() { return this.commentContent; }
 
     async createPost(title: string, description: string, body: string, tags: string): Promise<void> {
         logger.info(`Creating post: ${title}`);

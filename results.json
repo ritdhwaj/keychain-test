@@ -216,20 +216,90 @@
   },
   "suites": [
     {
-      "title": "api/ConduitApiE2E.spec.ts",
-      "file": "api/ConduitApiE2E.spec.ts",
+      "title": "auth.setup.ts",
+      "file": "auth.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2518,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[32m[2026-05-08T15:35:40.220] [INFO] playwright - \u001b[39mConduitSignInPage initialized with all locators\n"
+                    },
+                    {
+                      "text": "\u001b[32m[2026-05-08T15:35:40.222] [INFO] playwright - \u001b[39mNavigating to Conduit sign-in page\n"
+                    },
+                    {
+                      "text": "\u001b[32m[2026-05-08T15:35:41.339] [INFO] playwright - \u001b[39mSign-in page loaded successfully\n"
+                    },
+                    {
+                      "text": "\u001b[32m[2026-05-08T15:35:41.339] [INFO] playwright - \u001b[39mPerforming sign-in with email: conduituser@test.com\n"
+                    },
+                    {
+                      "text": "\u001b[32m[2026-05-08T15:35:41.342] [INFO] playwright - \u001b[39mFilling email field with: conduituser@test.com\n"
+                    },
+                    {
+                      "text": "\u001b[32m[2026-05-08T15:35:41.478] [INFO] playwright - \u001b[39mFilling password field\n"
+                    },
+                    {
+                      "text": "\u001b[32m[2026-05-08T15:35:41.638] [INFO] playwright - \u001b[39mClicking Sign In button\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-08T10:05:39.361Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/auth.setup.ts-authenticate-setup/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-60f085b113a677673906",
+          "file": "auth.setup.ts",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "ui/ConduitE2E.spec.ts",
+      "file": "ui/ConduitE2E.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Conduit API E2E Journey",
-          "file": "api/ConduitApiE2E.spec.ts",
-          "line": 3,
+          "title": "Conduit E2E Flow (Extended)",
+          "file": "ui/ConduitE2E.spec.ts",
+          "line": 11,
           "column": 6,
           "specs": [
             {
-              "title": "Step 1: User Registration",
+              "title": "should complete the full E2E flow including comments",
               "ok": true,
               "tags": [],
               "tests": [
@@ -237,35 +307,71 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "API",
-                  "projectName": "API",
+                  "projectId": "Chromium",
+                  "projectName": "Chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 195,
+                      "duration": 5903,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:45.975] [INFO] playwright - \u001b[39mConduitSignUpPage initialized\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:45.978] [INFO] playwright - \u001b[39mConduitSignInPage initialized with all locators\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:45.979] [INFO] playwright - \u001b[39mConduitPostPage initialized\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:46.698] [INFO] playwright - \u001b[39mSigning up user: user_1778234745111\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:48.344] [INFO] playwright - \u001b[39mNavigating to Conduit sign-in page\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:48.911] [INFO] playwright - \u001b[39mSign-in page loaded successfully\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:48.912] [INFO] playwright - \u001b[39mPerforming sign-in with email: user_1778234745111@test.com\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:48.912] [INFO] playwright - \u001b[39mFilling email field with: user_1778234745111@test.com\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:49.017] [INFO] playwright - \u001b[39mFilling password field\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:49.117] [INFO] playwright - \u001b[39mClicking Sign In button\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:49.500] [INFO] playwright - \u001b[39mCreating post: E2E Post 1778234745111\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:49.954] [INFO] playwright - \u001b[39mAdding comment: This is an E2E comment\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:50.158] [INFO] playwright - \u001b[39mDeleting comment\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:50.290] [INFO] playwright - \u001b[39mUpdating post to: Updated E2E Post 1778234745111\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:35:50.718] [INFO] playwright - \u001b[39mDeleting post\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T10:05:20.829Z",
+                      "startTime": "2026-05-08T10:05:45.126Z",
                       "annotations": [],
                       "attachments": [
                         {
-                          "name": "API-1 Request (POST users)",
-                          "contentType": "application/json",
-                          "body": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgImVuZHBvaW50IjogInVzZXJzIiwKICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMiLAogICJoZWFkZXJzIjoge30sCiAgImJvZHkiOiB7CiAgICAidXNlciI6IHsKICAgICAgInVzZXJuYW1lIjogImFwaV91c2VyXzE3NzgyMzQ3MjY5MDUiLAogICAgICAiZW1haWwiOiAiYXBpXzE3NzgyMzQ3MjY5MDVAdGVzdC5jb20iLAogICAgICAicGFzc3dvcmQiOiAiUGFzc3dvcmQxMjMhIgogICAgfQogIH0sCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjAzOVoiCn0="
-                        },
-                        {
-                          "name": "API-1 Response (200)",
-                          "contentType": "application/json",
-                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgInN0YXR1c1RleHQiOiAiT0siLAogICJoZWFkZXJzIjogewogICAgIngtcG93ZXJlZC1ieSI6ICJFeHByZXNzIiwKICAgICJhY2Nlc3MtY29udHJvbC1hbGxvdy1vcmlnaW4iOiAiKiIsCiAgICAidmFyeSI6ICJYLUhUVFAtTWV0aG9kLU92ZXJyaWRlIiwKICAgICJjb250ZW50LXR5cGUiOiAiYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOCIsCiAgICAiY29udGVudC1sZW5ndGgiOiAiMzAxIiwKICAgICJldGFnIjogIlcvXCIxMmQtSHRidkEzdkVsN05SRTlLZk9SelN3QVwiIiwKICAgICJkYXRlIjogIkZyaSwgMDggTWF5IDIwMjYgMTA6MDU6MjEgR01UIiwKICAgICJjb25uZWN0aW9uIjogImtlZXAtYWxpdmUiLAogICAgImtlZXAtYWxpdmUiOiAidGltZW91dD01IgogIH0sCiAgImJvZHkiOiB7CiAgICAidXNlciI6IHsKICAgICAgInVzZXJuYW1lIjogImFwaV91c2VyXzE3NzgyMzQ3MjY5MDUiLAogICAgICAiZW1haWwiOiAiYXBpXzE3NzgyMzQ3MjY5MDVAdGVzdC5jb20iLAogICAgICAidG9rZW4iOiAiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBaQ0k2TWpFc0luVnpaWEp1WVcxbElqb2lZWEJwWDNWelpYSmZNVGMzT0RJek5EY3lOamt3TlNJc0ltVjRjQ0k2TVRjNE16UXhPRGN5TVN3aWFXRjBJam94TnpjNE1qTTBOekl4ZlEuM25adW9ONjFBTEdZMlRUYXAyRkM3UDdTMnA1MGJTVWhCbWlNeHdtSzhDMCIsCiAgICAgICJiaW8iOiAiIiwKICAgICAgImltYWdlIjogIiIKICAgIH0KICB9LAogICJ0aW1lc3RhbXAiOiAiMjAyNi0wNS0wOFQxMDowNToyMS4wNDBaIgp9"
-                        },
-                        {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--f247b-ey-Step-1-User-Registration-API/trace.zip"
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--704c9-E2E-flow-including-comments-Chromium/trace.zip"
                         }
                       ]
                     }
@@ -273,13 +379,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "66a77179d84ec27f9628-f38c0ee891d4fd34973a",
-              "file": "api/ConduitApiE2E.spec.ts",
+              "id": "886c50021d96aa757044-8fbf7c360d6ab73f3e7e",
+              "file": "ui/ConduitE2E.spec.ts",
               "line": 29,
               "column": 5
             },
             {
-              "title": "Step 2: User Login",
+              "title": "should update user profile in settings",
               "ok": true,
               "tags": [],
               "tests": [
@@ -287,453 +393,262 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "API",
-                  "projectName": "API",
+                  "projectId": "Chromium",
+                  "projectName": "Chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 133,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 19537,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('Short bio about you')\nExpected: \u001b[32m\"Bio updated at 2026-05-08T10:05:53.970Z\"\u001b[39m\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('Short bio about you')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('Short bio about you')\nExpected: \u001b[32m\"Bio updated at 2026-05-08T10:05:53.970Z\"\u001b[39m\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('Short bio about you')\u001b[22m\n\n    at /Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts:86:68",
+                        "location": {
+                          "file": "/Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts",
+                          "column": 68,
+                          "line": 86
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 84 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mreload()\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Short bio about you'\u001b[39m))\u001b[33m.\u001b[39mtoHaveValue(newBio)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 87 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 88 |\u001b[39m     test(\u001b[32m'should mark an article as favorite and verify it on the profile page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\n \u001b[90m 89 |\u001b[39m         conduitSignUpPage\u001b[33m,\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts",
+                            "column": 68,
+                            "line": 86
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByPlaceholder('Short bio about you')\nExpected: \u001b[32m\"Bio updated at 2026-05-08T10:05:53.970Z\"\u001b[39m\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByPlaceholder('Short bio about you')\u001b[22m\n\n\n\u001b[0m \u001b[90m 84 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mreload()\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByPlaceholder(\u001b[32m'Short bio about you'\u001b[39m))\u001b[33m.\u001b[39mtoHaveValue(newBio)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 87 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 88 |\u001b[39m     test(\u001b[32m'should mark an article as favorite and verify it on the profile page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({\n \u001b[90m 89 |\u001b[39m         conduitSignUpPage\u001b[33m,\u001b[39m\u001b[0m\n\u001b[2m    at /Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts:86:68\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T10:05:21.138Z",
+                      "startTime": "2026-05-08T10:05:51.628Z",
                       "annotations": [],
                       "attachments": [
                         {
-                          "name": "API-1 Request (POST users/login)",
-                          "contentType": "application/json",
-                          "body": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgImVuZHBvaW50IjogInVzZXJzL2xvZ2luIiwKICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMvbG9naW4iLAogICJoZWFkZXJzIjoge30sCiAgImJvZHkiOiB7CiAgICAidXNlciI6IHsKICAgICAgImVtYWlsIjogImFwaV8xNzc4MjM0NzI2OTA1QHRlc3QuY29tIiwKICAgICAgInBhc3N3b3JkIjogIlBhc3N3b3JkMTIzISIKICAgIH0KICB9LAogICJ0aW1lc3RhbXAiOiAiMjAyNi0wNS0wOFQxMDowNToyMS4yNTdaIgp9"
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium/test-failed-1.png"
                         },
                         {
-                          "name": "API-1 Response (200)",
-                          "contentType": "application/json",
-                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgInN0YXR1c1RleHQiOiAiT0siLAogICJoZWFkZXJzIjogewogICAgIngtcG93ZXJlZC1ieSI6ICJFeHByZXNzIiwKICAgICJhY2Nlc3MtY29udHJvbC1hbGxvdy1vcmlnaW4iOiAiKiIsCiAgICAidmFyeSI6ICJYLUhUVFAtTWV0aG9kLU92ZXJyaWRlIiwKICAgICJjb250ZW50LXR5cGUiOiAiYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOCIsCiAgICAiY29udGVudC1sZW5ndGgiOiAiMzA1IiwKICAgICJldGFnIjogIlcvXCIxMzEtbDJyeEdUWmlTYW5jaUpqdEtMeTNCUVwiIiwKICAgICJkYXRlIjogIkZyaSwgMDggTWF5IDIwMjYgMTA6MDU6MjEgR01UIiwKICAgICJjb25uZWN0aW9uIjogImtlZXAtYWxpdmUiLAogICAgImtlZXAtYWxpdmUiOiAidGltZW91dD01IgogIH0sCiAgImJvZHkiOiB7CiAgICAidXNlciI6IHsKICAgICAgInVzZXJuYW1lIjogImFwaV91c2VyXzE3NzgyMzQ3MjY5MDUiLAogICAgICAiZW1haWwiOiAiYXBpXzE3NzgyMzQ3MjY5MDVAdGVzdC5jb20iLAogICAgICAidG9rZW4iOiAiZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBaQ0k2TWpFc0luVnpaWEp1WVcxbElqb2lZWEJwWDNWelpYSmZNVGMzT0RJek5EY3lOamt3TlNJc0ltVjRjQ0k2TVRjNE16UXhPRGN5TVN3aWFXRjBJam94TnpjNE1qTTBOekl4ZlEuM25adW9ONjFBTEdZMlRUYXAyRkM3UDdTMnA1MGJTVWhCbWlNeHdtSzhDMCIsCiAgICAgICJiaW8iOiBudWxsLAogICAgICAiaW1hZ2UiOiBudWxsCiAgICB9CiAgfSwKICAidGltZXN0YW1wIjogIjIwMjYtMDUtMDhUMTA6MDU6MjEuMjU4WiIKfQ=="
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium/error-context.md"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit-API-E2E-Journey-Step-2-User-Login-API/trace.zip"
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts",
+                        "column": 68,
+                        "line": 86
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8754,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-05-08T10:06:14.322Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--3be16-te-user-profile-in-settings-Chromium-retry1/trace.zip"
                         }
                       ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "flaky"
                 }
               ],
-              "id": "66a77179d84ec27f9628-90aae97ef4f617e2c052",
-              "file": "api/ConduitApiE2E.spec.ts",
-              "line": 43,
+              "id": "886c50021d96aa757044-52a8faa9063e117e48f7",
+              "file": "ui/ConduitE2E.spec.ts",
+              "line": 70,
               "column": 5
             },
             {
-              "title": "Step 3: Create Article",
-              "ok": true,
+              "title": "should mark an article as favorite and verify it on the profile page",
+              "ok": false,
               "tags": [],
               "tests": [
                 {
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "API",
-                  "projectName": "API",
+                  "projectId": "Chromium",
+                  "projectName": "Chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 63,
-                      "errors": [],
-                      "stdout": [],
+                      "status": "failed",
+                      "duration": 35046,
+                      "error": {
+                        "message": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Article Title') to be visible\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Article Title') to be visible\u001b[22m\n\n    at ConduitPostPage.fill (/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts:37:19)\n    at ConduitPostPage.createPost (/Users/mac/Desktop/keychain-test/keychain-test/src/pages/ConduitPostPage.ts:57:20)\n    at /Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts:99:31",
+                        "location": {
+                          "file": "/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts",
+                          "column": 19,
+                          "line": 37
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../src/base/BasePage.ts:37\n\n\u001b[0m \u001b[90m 35 |\u001b[39m   \u001b[36masync\u001b[39m fill(selector\u001b[33m:\u001b[39m string \u001b[33m|\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m value\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options \u001b[33m=\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdefaultTimeout }) {\n \u001b[90m 36 |\u001b[39m     \u001b[36mconst\u001b[39m locator \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator(selector)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m options\u001b[33m.\u001b[39mtimeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mfill(value)\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m   }\n \u001b[90m 40 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts",
+                            "column": 19,
+                            "line": 37
+                          },
+                          "message": "TimeoutError: locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Article Title') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../src/base/BasePage.ts:37\n\n\u001b[0m \u001b[90m 35 |\u001b[39m   \u001b[36masync\u001b[39m fill(selector\u001b[33m:\u001b[39m string \u001b[33m|\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m value\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m options \u001b[33m=\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdefaultTimeout }) {\n \u001b[90m 36 |\u001b[39m     \u001b[36mconst\u001b[39m locator \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator(selector)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m options\u001b[33m.\u001b[39mtimeout })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mfill(value)\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m   }\n \u001b[90m 40 |\u001b[39m\u001b[0m\n\u001b[2m    at ConduitPostPage.fill (/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts:37:19)\u001b[22m\n\u001b[2m    at ConduitPostPage.createPost (/Users/mac/Desktop/keychain-test/keychain-test/src/pages/ConduitPostPage.ts:57:20)\u001b[22m\n\u001b[2m    at /Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts:99:31\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:36:23.727] [INFO] playwright - \u001b[39mConduitSignUpPage initialized\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:36:23.731] [INFO] playwright - \u001b[39mConduitPostPage initialized\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:36:23.743] [INFO] playwright - \u001b[39mConduitProfilePage initialized\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:36:24.488] [INFO] playwright - \u001b[39mSigning up user: fav_user_1778234774309\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:36:25.173] [INFO] playwright - \u001b[39mCreating post: E2E Post 1778234774309\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-08T10:05:21.327Z",
+                      "startTime": "2026-05-08T10:06:23.429Z",
                       "annotations": [],
                       "attachments": [
                         {
-                          "name": "API-1 Request (POST articles)",
-                          "contentType": "application/json",
-                          "body": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgImVuZHBvaW50IjogImFydGljbGVzIiwKICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvYXJ0aWNsZXMiLAogICJoZWFkZXJzIjogewogICAgIkF1dGhvcml6YXRpb24iOiAiVG9rZW4gZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBaQ0k2TWpFc0luVnpaWEp1WVcxbElqb2lZWEJwWDNWelpYSmZNVGMzT0RJek5EY3lOamt3TlNJc0ltVjRjQ0k2TVRjNE16UXhPRGN5TVN3aWFXRjBJam94TnpjNE1qTTBOekl4ZlEuM25adW9ONjFBTEdZMlRUYXAyRkM3UDdTMnA1MGJTVWhCbWlNeHdtSzhDMCIKICB9LAogICJib2R5IjogewogICAgImFydGljbGUiOiB7CiAgICAgICJ0aXRsZSI6ICJBUEkgQXJ0aWNsZSAxNzc4MjM0NzI2OTA1IiwKICAgICAgImRlc2NyaXB0aW9uIjogIkFQSSBEZXNjcmlwdGlvbiIsCiAgICAgICJib2R5IjogIkFQSSBCb2R5IGNvbnRlbnQiLAogICAgICAidGFnTGlzdCI6IFsKICAgICAgICAiYXBpIiwKICAgICAgICAidGVzdCIKICAgICAgXQogICAgfQogIH0sCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjM4MVoiCn0="
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/test-failed-1.png"
                         },
                         {
-                          "name": "API-1 Response (200)",
-                          "contentType": "application/json",
-                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgInN0YXR1c1RleHQiOiAiT0siLAogICJoZWFkZXJzIjogewogICAgIngtcG93ZXJlZC1ieSI6ICJFeHByZXNzIiwKICAgICJhY2Nlc3MtY29udHJvbC1hbGxvdy1vcmlnaW4iOiAiKiIsCiAgICAidmFyeSI6ICJYLUhUVFAtTWV0aG9kLU92ZXJyaWRlIiwKICAgICJjb250ZW50LXR5cGUiOiAiYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOCIsCiAgICAiY29udGVudC1sZW5ndGgiOiAiNDIxIiwKICAgICJldGFnIjogIlcvXCIxYTUtWko1N0xHUGl6RWhjTmw4NjY2aFc3d1wiIiwKICAgICJkYXRlIjogIkZyaSwgMDggTWF5IDIwMjYgMTA6MDU6MjEgR01UIiwKICAgICJjb25uZWN0aW9uIjogImtlZXAtYWxpdmUiLAogICAgImtlZXAtYWxpdmUiOiAidGltZW91dD01IgogIH0sCiAgImJvZHkiOiB7CiAgICAiYXJ0aWNsZSI6IHsKICAgICAgInNsdWciOiAiYXBpLWFydGljbGUtMTc3ODIzNDcyNjkwNS1zNWF4bjIiLAogICAgICAidGl0bGUiOiAiQVBJIEFydGljbGUgMTc3ODIzNDcyNjkwNSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJBUEkgRGVzY3JpcHRpb24iLAogICAgICAiYm9keSI6ICJBUEkgQm9keSBjb250ZW50IiwKICAgICAgImNyZWF0ZWRBdCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjM2NloiLAogICAgICAidXBkYXRlZEF0IjogIjIwMjYtMDUtMDhUMTA6MDU6MjEuMzY2WiIsCiAgICAgICJ0YWdMaXN0IjogW10sCiAgICAgICJmYXZvcml0ZWQiOiBmYWxzZSwKICAgICAgImZhdm9yaXRlc0NvdW50IjogMCwKICAgICAgImF1dGhvciI6IHsKICAgICAgICAidXNlcm5hbWUiOiAiYXBpX3VzZXJfMTc3ODIzNDcyNjkwNSIsCiAgICAgICAgImJpbyI6IG51bGwsCiAgICAgICAgImltYWdlIjogImh0dHBzOi8vc3RhdGljLnByb2R1Y3Rpb25yZWFkeS5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZyIsCiAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgIH0KICAgIH0KICB9LAogICJ0aW1lc3RhbXAiOiAiMjAyNi0wNS0wOFQxMDowNToyMS4zODNaIgp9"
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/error-context.md"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--1950d-urney-Step-3-Create-Article-API/trace.zip"
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium/trace.zip"
                         }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "66a77179d84ec27f9628-cd2ea0e75e727c64a7e3",
-              "file": "api/ConduitApiE2E.spec.ts",
-              "line": 57,
-              "column": 5
-            },
-            {
-              "title": "Step 4: Update Article",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "API",
-                  "projectName": "API",
-                  "results": [
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts",
+                        "column": 19,
+                        "line": 37
+                      }
+                    },
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 3,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 105,
-                      "errors": [],
-                      "stdout": [],
+                      "status": "failed",
+                      "duration": 53553,
+                      "error": {
+                        "message": "TimeoutError: locator.fill: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Article Title')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.fill: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Article Title')\u001b[22m\n\n    at ConduitPostPage.fill (/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts:38:19)\n    at ConduitPostPage.createPost (/Users/mac/Desktop/keychain-test/keychain-test/src/pages/ConduitPostPage.ts:57:9)\n    at /Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts:99:9",
+                        "location": {
+                          "file": "/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts",
+                          "column": 19,
+                          "line": 38
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../src/base/BasePage.ts:38\n\n\u001b[0m \u001b[90m 36 |\u001b[39m     \u001b[36mconst\u001b[39m locator \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator(selector)\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m options\u001b[33m.\u001b[39mtimeout })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mfill(value)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 39 |\u001b[39m   }\n \u001b[90m 40 |\u001b[39m\n \u001b[90m 41 |\u001b[39m   \u001b[36masync\u001b[39m clear(selector\u001b[33m:\u001b[39m string \u001b[33m|\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m options \u001b[33m=\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdefaultTimeout }) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts",
+                            "column": 19,
+                            "line": 38
+                          },
+                          "message": "TimeoutError: locator.fill: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByPlaceholder('Article Title')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../src/base/BasePage.ts:38\n\n\u001b[0m \u001b[90m 36 |\u001b[39m     \u001b[36mconst\u001b[39m locator \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mgetLocator(selector)\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m options\u001b[33m.\u001b[39mtimeout })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m locator\u001b[33m.\u001b[39mfill(value)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 39 |\u001b[39m   }\n \u001b[90m 40 |\u001b[39m\n \u001b[90m 41 |\u001b[39m   \u001b[36masync\u001b[39m clear(selector\u001b[33m:\u001b[39m string \u001b[33m|\u001b[39m \u001b[33mLocator\u001b[39m\u001b[33m,\u001b[39m options \u001b[33m=\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mdefaultTimeout }) {\u001b[0m\n\u001b[2m    at ConduitPostPage.fill (/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts:38:19)\u001b[22m\n\u001b[2m    at ConduitPostPage.createPost (/Users/mac/Desktop/keychain-test/keychain-test/src/pages/ConduitPostPage.ts:57:9)\u001b[22m\n\u001b[2m    at /Users/mac/Desktop/keychain-test/keychain-test/tests/ui/ConduitE2E.spec.ts:99:9\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:37:02.634] [INFO] playwright - \u001b[39mConduitSignUpPage initialized\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:37:02.640] [INFO] playwright - \u001b[39mConduitPostPage initialized\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:37:02.649] [INFO] playwright - \u001b[39mConduitProfilePage initialized\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:37:03.743] [INFO] playwright - \u001b[39mSigning up user: fav_user_1778234821711\n"
+                        },
+                        {
+                          "text": "\u001b[32m[2026-05-08T15:37:04.516] [INFO] playwright - \u001b[39mCreating post: E2E Post 1778234821711\n"
+                        }
+                      ],
                       "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-08T10:05:21.440Z",
+                      "retry": 1,
+                      "startTime": "2026-05-08T10:07:01.743Z",
                       "annotations": [],
                       "attachments": [
                         {
-                          "name": "API-1 Request (PUT articles/api-article-1778234726905-s5axn2)",
-                          "contentType": "application/json",
-                          "body": "ewogICJtZXRob2QiOiAiUFVUIiwKICAiZW5kcG9pbnQiOiAiYXJ0aWNsZXMvYXBpLWFydGljbGUtMTc3ODIzNDcyNjkwNS1zNWF4bjIiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9hcnRpY2xlcy9hcGktYXJ0aWNsZS0xNzc4MjM0NzI2OTA1LXM1YXhuMiIsCiAgImhlYWRlcnMiOiB7CiAgICAiQXV0aG9yaXphdGlvbiI6ICJUb2tlbiBleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZNakVzSW5WelpYSnVZVzFsSWpvaVlYQnBYM1Z6WlhKZk1UYzNPREl6TkRjeU5qa3dOU0lzSW1WNGNDSTZNVGM0TXpReE9EY3lNU3dpYVdGMElqb3hOemM0TWpNME56SXhmUS4zblp1b042MUFMR1kyVFRhcDJGQzdQN1MycDUwYlNVaEJtaU14d21LOEMwIgogIH0sCiAgImJvZHkiOiB7CiAgICAiYXJ0aWNsZSI6IHsKICAgICAgInRpdGxlIjogIlVwZGF0ZWQgQVBJIEFydGljbGUgMTc3ODIzNDcyNjkwNSIsCiAgICAgICJib2R5IjogIlVwZGF0ZWQgQVBJIEJvZHkgY29udGVudCIKICAgIH0KICB9LAogICJ0aW1lc3RhbXAiOiAiMjAyNi0wNS0wOFQxMDowNToyMS40OThaIgp9"
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/test-failed-1.png"
                         },
                         {
-                          "name": "API-1 Response (200)",
-                          "contentType": "application/json",
-                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgInN0YXR1c1RleHQiOiAiT0siLAogICJoZWFkZXJzIjogewogICAgIngtcG93ZXJlZC1ieSI6ICJFeHByZXNzIiwKICAgICJhY2Nlc3MtY29udHJvbC1hbGxvdy1vcmlnaW4iOiAiKiIsCiAgICAiY29udGVudC10eXBlIjogImFwcGxpY2F0aW9uL2pzb247IGNoYXJzZXQ9dXRmLTgiLAogICAgImNvbnRlbnQtbGVuZ3RoIjogIjQ0OSIsCiAgICAiZXRhZyI6ICJXL1wiMWMxLWlWU3hYVlBWYStsU3FUNE5hcmtuclFcIiIsCiAgICAiZGF0ZSI6ICJGcmksIDA4IE1heSAyMDI2IDEwOjA1OjIxIEdNVCIsCiAgICAiY29ubmVjdGlvbiI6ICJrZWVwLWFsaXZlIiwKICAgICJrZWVwLWFsaXZlIjogInRpbWVvdXQ9NSIKICB9LAogICJib2R5IjogewogICAgImFydGljbGUiOiB7CiAgICAgICJzbHVnIjogImFwaS1hcnRpY2xlLTE3NzgyMzQ3MjY5MDUtczVheG4yIiwKICAgICAgInRpdGxlIjogIlVwZGF0ZWQgQVBJIEFydGljbGUgMTc3ODIzNDcyNjkwNSIsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJBUEkgRGVzY3JpcHRpb24iLAogICAgICAiYm9keSI6ICJVcGRhdGVkIEFQSSBCb2R5IGNvbnRlbnQiLAogICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMTA6MDU6MjEuMzY2WiIsCiAgICAgICJ1cGRhdGVkQXQiOiAiMjAyNi0wNS0wOFQxMDowNToyMS40ODNaIiwKICAgICAgInRhZ0xpc3QiOiBbCiAgICAgICAgImFwaSIsCiAgICAgICAgInRlc3QiCiAgICAgIF0sCiAgICAgICJmYXZvcml0ZWQiOiBmYWxzZSwKICAgICAgImZhdm9yaXRlc0NvdW50IjogMCwKICAgICAgImF1dGhvciI6IHsKICAgICAgICAidXNlcm5hbWUiOiAiYXBpX3VzZXJfMTc3ODIzNDcyNjkwNSIsCiAgICAgICAgImJpbyI6IG51bGwsCiAgICAgICAgImltYWdlIjogImh0dHBzOi8vc3RhdGljLnByb2R1Y3Rpb25yZWFkeS5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZyIsCiAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgIH0KICAgIH0KICB9LAogICJ0aW1lc3RhbXAiOiAiMjAyNi0wNS0wOFQxMDowNToyMS40OTlaIgp9"
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/error-context.md"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--90523-urney-Step-4-Update-Article-API/trace.zip"
+                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/ui-ConduitE2E-Conduit-E2E--e946d-rify-it-on-the-profile-page-Chromium-retry1/trace.zip"
                         }
-                      ]
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/mac/Desktop/keychain-test/keychain-test/src/base/BasePage.ts",
+                        "column": 19,
+                        "line": 38
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
-              "id": "66a77179d84ec27f9628-7c89b46c053910498407",
-              "file": "api/ConduitApiE2E.spec.ts",
-              "line": 74,
-              "column": 5
-            },
-            {
-              "title": "Step 5: View Articles",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "API",
-                  "projectName": "API",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 108,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-08T10:05:21.612Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "API-1 Request (GET articles)",
-                          "contentType": "application/json",
-                          "body": "ewogICJtZXRob2QiOiAiR0VUIiwKICAiZW5kcG9pbnQiOiAiYXJ0aWNsZXMiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9hcnRpY2xlcyIsCiAgImhlYWRlcnMiOiB7CiAgICAiQXV0aG9yaXphdGlvbiI6ICJUb2tlbiBleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZNakVzSW5WelpYSnVZVzFsSWpvaVlYQnBYM1Z6WlhKZk1UYzNPREl6TkRjeU5qa3dOU0lzSW1WNGNDSTZNVGM0TXpReE9EY3lNU3dpYVdGMElqb3hOemM0TWpNME56SXhmUS4zblp1b042MUFMR1kyVFRhcDJGQzdQN1MycDUwYlNVaEJtaU14d21LOEMwIgogIH0sCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjcyNloiCn0="
-                        },
-                        {
-                          "name": "API-1 Response (200)",
-                          "contentType": "application/json",
-                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgInN0YXR1c1RleHQiOiAiT0siLAogICJoZWFkZXJzIjogewogICAgIngtcG93ZXJlZC1ieSI6ICJFeHByZXNzIiwKICAgICJhY2Nlc3MtY29udHJvbC1hbGxvdy1vcmlnaW4iOiAiKiIsCiAgICAiY29udGVudC10eXBlIjogImFwcGxpY2F0aW9uL2pzb247IGNoYXJzZXQ9dXRmLTgiLAogICAgImNvbnRlbnQtbGVuZ3RoIjogIjQyODYiLAogICAgImV0YWciOiAiVy9cIjEwYmUtbjRQb3NtTmxKb2xYZnVlWTc4SG1JZ1wiIiwKICAgICJkYXRlIjogIkZyaSwgMDggTWF5IDIwMjYgMTA6MDU6MjEgR01UIiwKICAgICJjb25uZWN0aW9uIjogImtlZXAtYWxpdmUiLAogICAgImtlZXAtYWxpdmUiOiAidGltZW91dD01IgogIH0sCiAgImJvZHkiOiB7CiAgICAiYXJ0aWNsZXMiOiBbCiAgICAgIHsKICAgICAgICAic2x1ZyI6ICJhcGktYXJ0aWNsZS0xNzc4MjM0NzI2OTA1LXM1YXhuMiIsCiAgICAgICAgInRpdGxlIjogIlVwZGF0ZWQgQVBJIEFydGljbGUgMTc3ODIzNDcyNjkwNSIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIkFQSSBEZXNjcmlwdGlvbiIsCiAgICAgICAgImJvZHkiOiAiVXBkYXRlZCBBUEkgQm9keSBjb250ZW50IiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMTA6MDU6MjEuMzY2WiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjQ4M1oiLAogICAgICAgICJ0YWdMaXN0IjogWwogICAgICAgICAgImFwaSIsCiAgICAgICAgICAidGVzdCIKICAgICAgICBdLAogICAgICAgICJmYXZvcml0ZWQiOiBmYWxzZSwKICAgICAgICAiZmF2b3JpdGVzQ291bnQiOiAwLAogICAgICAgICJhdXRob3IiOiB7CiAgICAgICAgICAidXNlcm5hbWUiOiAiYXBpX3VzZXJfMTc3ODIzNDcyNjkwNSIsCiAgICAgICAgICAiYmlvIjogbnVsbCwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgInNsdWciOiAibm8tdG9rZW4tcTNpbGxiIiwKICAgICAgICAidGl0bGUiOiAiTm8gVG9rZW4iLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJEZXNjIiwKICAgICAgICAiYm9keSI6ICJCb2R5IiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMTA6MDM6MzYuMzA3WiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI2LTA1LTA4VDEwOjAzOjM2LjMwN1oiLAogICAgICAgICJ0YWdMaXN0IjogW10sCiAgICAgICAgImZhdm9yaXRlZCI6IGZhbHNlLAogICAgICAgICJmYXZvcml0ZXNDb3VudCI6IDAsCiAgICAgICAgImF1dGhvciI6IHsKICAgICAgICAgICJ1c2VybmFtZSI6ICJjb25kdWl0dXNlciIsCiAgICAgICAgICAiYmlvIjogImFiZGJhIiwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgInNsdWciOiAibm8tdG9rZW4tYWoyNWllIiwKICAgICAgICAidGl0bGUiOiAiTm8gVG9rZW4iLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJEZXNjIiwKICAgICAgICAiYm9keSI6ICJCb2R5IiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMTA6MDM6MzIuNjU5WiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI2LTA1LTA4VDEwOjAzOjMyLjY1OVoiLAogICAgICAgICJ0YWdMaXN0IjogW10sCiAgICAgICAgImZhdm9yaXRlZCI6IGZhbHNlLAogICAgICAgICJmYXZvcml0ZXNDb3VudCI6IDAsCiAgICAgICAgImF1dGhvciI6IHsKICAgICAgICAgICJ1c2VybmFtZSI6ICJjb25kdWl0dXNlciIsCiAgICAgICAgICAiYmlvIjogImFiZGJhIiwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgInNsdWciOiAiZ2xvYmFsLWF1dGgtYXJ0aWNsZS0xNzc4MjM0NDQ4NDUyLXJmMGlsdCIsCiAgICAgICAgInRpdGxlIjogIkdsb2JhbCBBdXRoIEFydGljbGUgMTc3ODIzNDQ0ODQ1MiIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIlRlc3RpbmcgZ2xvYmFsIGF1dGgiLAogICAgICAgICJib2R5IjogIlRoaXMgcG9zdCB3YXMgY3JlYXRlZCB1c2luZyB0aGUgdG9rZW4gZnJvbSBhdXRoLmpzb24iLAogICAgICAgICJjcmVhdGVkQXQiOiAiMjAyNi0wNS0wOFQxMDowMDo0OC40NjNaIiwKICAgICAgICAidXBkYXRlZEF0IjogIjIwMjYtMDUtMDhUMTA6MDA6NDguNDYzWiIsCiAgICAgICAgInRhZ0xpc3QiOiBbCiAgICAgICAgICAiZ2xvYmFsIiwKICAgICAgICAgICJhdXRoIgogICAgICAgIF0sCiAgICAgICAgImZhdm9yaXRlZCI6IGZhbHNlLAogICAgICAgICJmYXZvcml0ZXNDb3VudCI6IDAsCiAgICAgICAgImF1dGhvciI6IHsKICAgICAgICAgICJ1c2VybmFtZSI6ICJjb25kdWl0dXNlciIsCiAgICAgICAgICAiYmlvIjogImFiZGJhIiwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgInNsdWciOiAiZTJlLXBvc3QtMTc3ODIzNDAzOTAzMy1mZWVheDUiLAogICAgICAgICJ0aXRsZSI6ICJFMkUgUG9zdCAxNzc4MjM0MDM5MDMzIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiRTJFIERlc2NyaXB0aW9uIiwKICAgICAgICAiYm9keSI6ICJFMkUgQm9keSBjb250ZW50IiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMDk6NTQ6MDIuOTYyWiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI2LTA1LTA4VDA5OjU0OjAyLjk2MloiLAogICAgICAgICJ0YWdMaXN0IjogW10sCiAgICAgICAgImZhdm9yaXRlZCI6IGZhbHNlLAogICAgICAgICJmYXZvcml0ZXNDb3VudCI6IDAsCiAgICAgICAgImF1dGhvciI6IHsKICAgICAgICAgICJ1c2VybmFtZSI6ICJmYXZfdXNlcl8xNzc4MjM0MDM5MDMzIiwKICAgICAgICAgICJiaW8iOiBudWxsLAogICAgICAgICAgImltYWdlIjogImh0dHBzOi8vc3RhdGljLnByb2R1Y3Rpb25yZWFkeS5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZyIsCiAgICAgICAgICAiZm9sbG93aW5nIjogZmFsc2UKICAgICAgICB9CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAic2x1ZyI6ICJ0ZXN0LWFydGljbGUtaWFuZHViIiwKICAgICAgICAidGl0bGUiOiAiVGVzdCBBcnRpY2xlIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiRGVzYyIsCiAgICAgICAgImJvZHkiOiAiQm9keSIsCiAgICAgICAgImNyZWF0ZWRBdCI6ICIyMDI2LTA1LTA4VDA5OjQ2OjU4LjA2NFoiLAogICAgICAgICJ1cGRhdGVkQXQiOiAiMjAyNi0wNS0wOFQwOTo0Njo1OC4wNjRaIiwKICAgICAgICAidGFnTGlzdCI6IFtdLAogICAgICAgICJmYXZvcml0ZWQiOiBmYWxzZSwKICAgICAgICAiZmF2b3JpdGVzQ291bnQiOiAwLAogICAgICAgICJhdXRob3IiOiB7CiAgICAgICAgICAidXNlcm5hbWUiOiAidGVzdHVzZXJfMTI0IiwKICAgICAgICAgICJiaW8iOiBudWxsLAogICAgICAgICAgImltYWdlIjogImh0dHBzOi8vc3RhdGljLnByb2R1Y3Rpb25yZWFkeS5pby9pbWFnZXMvc21pbGV5LWN5cnVzLmpwZyIsCiAgICAgICAgICAiZm9sbG93aW5nIjogZmFsc2UKICAgICAgICB9CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAic2x1ZyI6ICJlMmUtcG9zdC0xNzc4MjMzMDI1NjAxLWJwdWMydSIsCiAgICAgICAgInRpdGxlIjogIkUyRSBQb3N0IDE3NzgyMzMwMjU2MDEiLAogICAgICAgICJkZXNjcmlwdGlvbiI6ICJFMkUgRGVzY3JpcHRpb24iLAogICAgICAgICJib2R5IjogIkUyRSBCb2R5IGNvbnRlbnQiLAogICAgICAgICJjcmVhdGVkQXQiOiAiMjAyNi0wNS0wOFQwOTozNzowOS43MjRaIiwKICAgICAgICAidXBkYXRlZEF0IjogIjIwMjYtMDUtMDhUMDk6Mzc6MDkuNzI0WiIsCiAgICAgICAgInRhZ0xpc3QiOiBbXSwKICAgICAgICAiZmF2b3JpdGVkIjogZmFsc2UsCiAgICAgICAgImZhdm9yaXRlc0NvdW50IjogMCwKICAgICAgICAiYXV0aG9yIjogewogICAgICAgICAgInVzZXJuYW1lIjogImZhdl91c2VyXzE3NzgyMzMwMjU2MDEiLAogICAgICAgICAgImJpbyI6IG51bGwsCiAgICAgICAgICAiaW1hZ2UiOiAiaHR0cHM6Ly9zdGF0aWMucHJvZHVjdGlvbnJlYWR5LmlvL2ltYWdlcy9zbWlsZXktY3lydXMuanBnIiwKICAgICAgICAgICJmb2xsb3dpbmciOiBmYWxzZQogICAgICAgIH0KICAgICAgfSwKICAgICAgewogICAgICAgICJzbHVnIjogImUyZS1wb3N0LTE3NzgyMzI4Mjc0MzAtb2ljMXdxIiwKICAgICAgICAidGl0bGUiOiAiRTJFIFBvc3QgMTc3ODIzMjgyNzQzMCIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIkUyRSBEZXNjcmlwdGlvbiIsCiAgICAgICAgImJvZHkiOiAiRTJFIEJvZHkgY29udGVudCIsCiAgICAgICAgImNyZWF0ZWRBdCI6ICIyMDI2LTA1LTA4VDA5OjMzOjUxLjQ4OFoiLAogICAgICAgICJ1cGRhdGVkQXQiOiAiMjAyNi0wNS0wOFQwOTozMzo1MS40ODhaIiwKICAgICAgICAidGFnTGlzdCI6IFtdLAogICAgICAgICJmYXZvcml0ZWQiOiBmYWxzZSwKICAgICAgICAiZmF2b3JpdGVzQ291bnQiOiAwLAogICAgICAgICJhdXRob3IiOiB7CiAgICAgICAgICAidXNlcm5hbWUiOiAiZmF2X3VzZXJfMTc3ODIzMjgyNzQzMCIsCiAgICAgICAgICAiYmlvIjogbnVsbCwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgInNsdWciOiAiLWQ5YW53MyIsCiAgICAgICAgInRpdGxlIjogIiIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIkRlc2NyaXB0aW9uIiwKICAgICAgICAiYm9keSI6ICJCb2R5IiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMDk6MzE6MzcuNjczWiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI2LTA1LTA4VDA5OjMxOjM3LjY3M1oiLAogICAgICAgICJ0YWdMaXN0IjogW10sCiAgICAgICAgImZhdm9yaXRlZCI6IGZhbHNlLAogICAgICAgICJmYXZvcml0ZXNDb3VudCI6IDAsCiAgICAgICAgImF1dGhvciI6IHsKICAgICAgICAgICJ1c2VybmFtZSI6ICJjb25kdWl0dXNlciIsCiAgICAgICAgICAiYmlvIjogImFiZGJhIiwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgInNsdWciOiAiLWp3YzB0NSIsCiAgICAgICAgInRpdGxlIjogIiIsCiAgICAgICAgImRlc2NyaXB0aW9uIjogIkRlc2NyaXB0aW9uIiwKICAgICAgICAiYm9keSI6ICJCb2R5IiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMDk6MzE6MjkuMTU4WiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI2LTA1LTA4VDA5OjMxOjI5LjE1OFoiLAogICAgICAgICJ0YWdMaXN0IjogW10sCiAgICAgICAgImZhdm9yaXRlZCI6IGZhbHNlLAogICAgICAgICJmYXZvcml0ZXNDb3VudCI6IDAsCiAgICAgICAgImF1dGhvciI6IHsKICAgICAgICAgICJ1c2VybmFtZSI6ICJjb25kdWl0dXNlciIsCiAgICAgICAgICAiYmlvIjogImFiZGJhIiwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgInNsdWciOiAidGVzdC1hcnRpY2xlLTEyMy1oYjA1OHEiLAogICAgICAgICJ0aXRsZSI6ICJUZXN0IEFydGljbGUgMTIzIiwKICAgICAgICAiZGVzY3JpcHRpb24iOiAiVGhpcyBpcyBhIHRlc3QgZGVzY3JpcHRpb24uIiwKICAgICAgICAiYm9keSI6ICJUaGlzIGlzIHRoZSBib2R5IG9mIHRoZSB0ZXN0IGFydGljbGUuIiwKICAgICAgICAiY3JlYXRlZEF0IjogIjIwMjYtMDUtMDhUMDk6MjE6NDcuODcwWiIsCiAgICAgICAgInVwZGF0ZWRBdCI6ICIyMDI2LTA1LTA4VDA5OjIxOjQ3Ljg3MFoiLAogICAgICAgICJ0YWdMaXN0IjogW10sCiAgICAgICAgImZhdm9yaXRlZCI6IGZhbHNlLAogICAgICAgICJmYXZvcml0ZXNDb3VudCI6IDAsCiAgICAgICAgImF1dGhvciI6IHsKICAgICAgICAgICJ1c2VybmFtZSI6ICJjb25kdWl0dXNlciIsCiAgICAgICAgICAiYmlvIjogImFiZGJhIiwKICAgICAgICAgICJpbWFnZSI6ICJodHRwczovL3N0YXRpYy5wcm9kdWN0aW9ucmVhZHkuaW8vaW1hZ2VzL3NtaWxleS1jeXJ1cy5qcGciLAogICAgICAgICAgImZvbGxvd2luZyI6IGZhbHNlCiAgICAgICAgfQogICAgICB9CiAgICBdLAogICAgImFydGljbGVzQ291bnQiOiAxMQogIH0sCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjcyN1oiCn0="
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--0f61c-ourney-Step-5-View-Articles-API/trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "66a77179d84ec27f9628-252d51c2292639edd43a",
-              "file": "api/ConduitApiE2E.spec.ts",
-              "line": 89,
-              "column": 5
-            },
-            {
-              "title": "Step 6: Delete Article",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "API",
-                  "projectName": "API",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 53,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-08T10:05:21.776Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "API-1 Request (DELETE articles/api-article-1778234726905-s5axn2)",
-                          "contentType": "application/json",
-                          "body": "ewogICJtZXRob2QiOiAiREVMRVRFIiwKICAiZW5kcG9pbnQiOiAiYXJ0aWNsZXMvYXBpLWFydGljbGUtMTc3ODIzNDcyNjkwNS1zNWF4bjIiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9hcnRpY2xlcy9hcGktYXJ0aWNsZS0xNzc4MjM0NzI2OTA1LXM1YXhuMiIsCiAgImhlYWRlcnMiOiB7CiAgICAiQXV0aG9yaXphdGlvbiI6ICJUb2tlbiBleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZNakVzSW5WelpYSnVZVzFsSWpvaVlYQnBYM1Z6WlhKZk1UYzNPREl6TkRjeU5qa3dOU0lzSW1WNGNDSTZNVGM0TXpReE9EY3lNU3dpYVdGMElqb3hOemM0TWpNME56SXhmUS4zblp1b042MUFMR1kyVFRhcDJGQzdQN1MycDUwYlNVaEJtaU14d21LOEMwIgogIH0sCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjgyMVoiCn0="
-                        },
-                        {
-                          "name": "API-1 Response (204)",
-                          "contentType": "application/json",
-                          "body": "ewogICJzdGF0dXMiOiAyMDQsCiAgInN0YXR1c1RleHQiOiAiTm8gQ29udGVudCIsCiAgImhlYWRlcnMiOiB7CiAgICAieC1wb3dlcmVkLWJ5IjogIkV4cHJlc3MiLAogICAgImFjY2Vzcy1jb250cm9sLWFsbG93LW9yaWdpbiI6ICIqIiwKICAgICJldGFnIjogIlcvXCJhLW9RRE9WNTBlMU1OMkgvTjhHWWkrOHdcIiIsCiAgICAiZGF0ZSI6ICJGcmksIDA4IE1heSAyMDI2IDEwOjA1OjIxIEdNVCIsCiAgICAiY29ubmVjdGlvbiI6ICJrZWVwLWFsaXZlIiwKICAgICJrZWVwLWFsaXZlIjogInRpbWVvdXQ9NSIKICB9LAogICJib2R5IjogIiIsCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjgyMloiCn0="
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--15851-urney-Step-6-Delete-Article-API/trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "66a77179d84ec27f9628-46d8dae116f3030890af",
-              "file": "api/ConduitApiE2E.spec.ts",
-              "line": 104,
-              "column": 5
-            },
-            {
-              "title": "Step 7: Verify Deletion",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "API",
-                  "projectName": "API",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 110,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-08T10:05:21.868Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "API-1 Request (GET articles/api-article-1778234726905-s5axn2)",
-                          "contentType": "application/json",
-                          "body": "ewogICJtZXRob2QiOiAiR0VUIiwKICAiZW5kcG9pbnQiOiAiYXJ0aWNsZXMvYXBpLWFydGljbGUtMTc3ODIzNDcyNjkwNS1zNWF4bjIiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9hcnRpY2xlcy9hcGktYXJ0aWNsZS0xNzc4MjM0NzI2OTA1LXM1YXhuMiIsCiAgImhlYWRlcnMiOiB7fSwKICAidGltZXN0YW1wIjogIjIwMjYtMDUtMDhUMTA6MDU6MjEuOTkzWiIKfQ=="
-                        },
-                        {
-                          "name": "API-1 Response (404)",
-                          "contentType": "application/json",
-                          "body": "ewogICJzdGF0dXMiOiA0MDQsCiAgInN0YXR1c1RleHQiOiAiTm90IEZvdW5kIiwKICAiaGVhZGVycyI6IHsKICAgICJ4LXBvd2VyZWQtYnkiOiAiRXhwcmVzcyIsCiAgICAiYWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2luIjogIioiLAogICAgImNvbnRlbnQtdHlwZSI6ICJ0ZXh0L3BsYWluOyBjaGFyc2V0PXV0Zi04IiwKICAgICJjb250ZW50LWxlbmd0aCI6ICI5IiwKICAgICJldGFnIjogIlcvXCI5LW5SNnRjK1o0K2k5UnB3cVRPd3Z3RndcIiIsCiAgICAiZGF0ZSI6ICJGcmksIDA4IE1heSAyMDI2IDEwOjA1OjIxIEdNVCIsCiAgICAiY29ubmVjdGlvbiI6ICJrZWVwLWFsaXZlIiwKICAgICJrZWVwLWFsaXZlIjogInRpbWVvdXQ9NSIKICB9LAogICJib2R5IjogIk5vdCBGb3VuZCIsCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIxLjk5NFoiCn0="
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--22a74-rney-Step-7-Verify-Deletion-API/trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "66a77179d84ec27f9628-45f54aefd2dce8916feb",
-              "file": "api/ConduitApiE2E.spec.ts",
-              "line": 114,
-              "column": 5
-            }
-          ]
-        },
-        {
-          "title": "Conduit API Negative Tests",
-          "file": "api/ConduitApiE2E.spec.ts",
-          "line": 120,
-          "column": 6,
-          "specs": [
-            {
-              "title": "should not register with existing email",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "API",
-                  "projectName": "API",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 123,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-08T10:05:22.054Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "API-1 Request (POST users)",
-                          "contentType": "application/json",
-                          "body": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgImVuZHBvaW50IjogInVzZXJzIiwKICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMiLAogICJoZWFkZXJzIjoge30sCiAgImJvZHkiOiB7CiAgICAidXNlciI6IHsKICAgICAgInVzZXJuYW1lIjogImR1cGxpY2F0ZSIsCiAgICAgICJlbWFpbCI6ICJjb25kdWl0dXNlckB0ZXN0LmNvbSIsCiAgICAgICJwYXNzd29yZCI6ICJQYXNzd29yZDEyMyEiCiAgICB9CiAgfSwKICAidGltZXN0YW1wIjogIjIwMjYtMDUtMDhUMTA6MDU6MjIuMTc4WiIKfQ=="
-                        },
-                        {
-                          "name": "API-1 Response (404)",
-                          "contentType": "application/json",
-                          "body": "ewogICJzdGF0dXMiOiA0MDQsCiAgInN0YXR1c1RleHQiOiAiTm90IEZvdW5kIiwKICAiaGVhZGVycyI6IHsKICAgICJ4LXBvd2VyZWQtYnkiOiAiRXhwcmVzcyIsCiAgICAiYWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2luIjogIioiLAogICAgInZhcnkiOiAiWC1IVFRQLU1ldGhvZC1PdmVycmlkZSIsCiAgICAiY29udGVudC10eXBlIjogInRleHQvaHRtbDsgY2hhcnNldD11dGYtOCIsCiAgICAiY29udGVudC1sZW5ndGgiOiAiMzEiLAogICAgImV0YWciOiAiVy9cIjFmLWVUd0oyS1d4WEczZUFpOXh0TW5STFFcIiIsCiAgICAiZGF0ZSI6ICJGcmksIDA4IE1heSAyMDI2IDEwOjA1OjIyIEdNVCIsCiAgICAiY29ubmVjdGlvbiI6ICJrZWVwLWFsaXZlIiwKICAgICJrZWVwLWFsaXZlIjogInRpbWVvdXQ9NSIKICB9LAogICJib2R5IjogbnVsbCwKICAidGltZXN0YW1wIjogIjIwMjYtMDUtMDhUMTA6MDU6MjIuMTc5WiIKfQ=="
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--3a599-egister-with-existing-email-API/trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "66a77179d84ec27f9628-4368eafdad535680d899",
-              "file": "api/ConduitApiE2E.spec.ts",
-              "line": 121,
-              "column": 5
-            },
-            {
-              "title": "should not create article without token",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "API",
-                  "projectName": "API",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 56,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-08T10:05:22.219Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "API-1 Request (POST articles)",
-                          "contentType": "application/json",
-                          "body": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgImVuZHBvaW50IjogImFydGljbGVzIiwKICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvYXJ0aWNsZXMiLAogICJoZWFkZXJzIjogewogICAgIkF1dGhvcml6YXRpb24iOiAiIgogIH0sCiAgImJvZHkiOiB7CiAgICAiYXJ0aWNsZSI6IHsKICAgICAgInRpdGxlIjogIk5vIFRva2VuIiwKICAgICAgImRlc2NyaXB0aW9uIjogIkRlc2MiLAogICAgICAiYm9keSI6ICJCb2R5IgogICAgfQogIH0sCiAgInRpbWVzdGFtcCI6ICIyMDI2LTA1LTA4VDEwOjA1OjIyLjI2MVoiCn0="
-                        },
-                        {
-                          "name": "API-1 Response (401)",
-                          "contentType": "application/json",
-                          "body": "ewogICJzdGF0dXMiOiA0MDEsCiAgInN0YXR1c1RleHQiOiAiVW5hdXRob3JpemVkIiwKICAiaGVhZGVycyI6IHsKICAgICJ4LXBvd2VyZWQtYnkiOiAiRXhwcmVzcyIsCiAgICAiYWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2luIjogIioiLAogICAgInZhcnkiOiAiWC1IVFRQLU1ldGhvZC1PdmVycmlkZSIsCiAgICAieC1jb250ZW50LXR5cGUtb3B0aW9ucyI6ICJub3NuaWZmIiwKICAgICJjb250ZW50LXR5cGUiOiAidGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04IiwKICAgICJkYXRlIjogIkZyaSwgMDggTWF5IDIwMjYgMTA6MDU6MjIgR01UIiwKICAgICJjb25uZWN0aW9uIjogImtlZXAtYWxpdmUiLAogICAgImtlZXAtYWxpdmUiOiAidGltZW91dD01IiwKICAgICJjb250ZW50LWxlbmd0aCI6ICIxMTA1NCIKICB9LAogICJib2R5IjogbnVsbCwKICAidGltZXN0YW1wIjogIjIwMjYtMDUtMDhUMTA6MDU6MjIuMjYyWiIKfQ=="
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--440e8-reate-article-without-token-API/trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "66a77179d84ec27f9628-73cb751896341f41b97e",
-              "file": "api/ConduitApiE2E.spec.ts",
-              "line": 136,
-              "column": 5
-            },
-            {
-              "title": "should not login with invalid password",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "API",
-                  "projectName": "API",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 123,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-08T10:05:22.331Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "API-1 Request (POST users/login)",
-                          "contentType": "application/json",
-                          "body": "ewogICJtZXRob2QiOiAiUE9TVCIsCiAgImVuZHBvaW50IjogInVzZXJzL2xvZ2luIiwKICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvdXNlcnMvbG9naW4iLAogICJoZWFkZXJzIjoge30sCiAgImJvZHkiOiB7CiAgICAidXNlciI6IHsKICAgICAgImVtYWlsIjogImNvbmR1aXR1c2VyQHRlc3QuY29tIiwKICAgICAgInBhc3N3b3JkIjogIndyb25ncGFzc3dvcmQiCiAgICB9CiAgfSwKICAidGltZXN0YW1wIjogIjIwMjYtMDUtMDhUMTA6MDU6MjIuNTExWiIKfQ=="
-                        },
-                        {
-                          "name": "API-1 Response (422)",
-                          "contentType": "application/json",
-                          "body": "ewogICJzdGF0dXMiOiA0MjIsCiAgInN0YXR1c1RleHQiOiAiVW5wcm9jZXNzYWJsZSBFbnRpdHkiLAogICJoZWFkZXJzIjogewogICAgIngtcG93ZXJlZC1ieSI6ICJFeHByZXNzIiwKICAgICJhY2Nlc3MtY29udHJvbC1hbGxvdy1vcmlnaW4iOiAiKiIsCiAgICAidmFyeSI6ICJYLUhUVFAtTWV0aG9kLU92ZXJyaWRlIiwKICAgICJjb250ZW50LXR5cGUiOiAiYXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOCIsCiAgICAiY29udGVudC1sZW5ndGgiOiAiNDUiLAogICAgImV0YWciOiAiVy9cIjJkLVNmV0NSRDdjM25oQWhCdHBIK0hpbWdcIiIsCiAgICAiZGF0ZSI6ICJGcmksIDA4IE1heSAyMDI2IDEwOjA1OjIyIEdNVCIsCiAgICAiY29ubmVjdGlvbiI6ICJrZWVwLWFsaXZlIiwKICAgICJrZWVwLWFsaXZlIjogInRpbWVvdXQ9NSIKICB9LAogICJib2R5IjogewogICAgImVycm9ycyI6IHsKICAgICAgImVtYWlsIG9yIHBhc3N3b3JkIjogImlzIGludmFsaWQiCiAgICB9CiAgfSwKICAidGltZXN0YW1wIjogIjIwMjYtMDUtMDhUMTA6MDU6MjIuNTEyWiIKfQ=="
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/mac/Desktop/keychain-test/keychain-test/test-results/api-ConduitApiE2E-Conduit--f1c49-login-with-invalid-password-API/trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "66a77179d84ec27f9628-ac84757dca51c459a8d8",
-              "file": "api/ConduitApiE2E.spec.ts",
-              "line": 152,
+              "id": "886c50021d96aa757044-d01ce32f07637bd83fa2",
+              "file": "ui/ConduitE2E.spec.ts",
+              "line": 88,
               "column": 5
             }
           ]
@@ -743,11 +658,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-08T10:05:17.978Z",
-    "duration": 4647.919,
-    "expected": 10,
+    "startTime": "2026-05-08T10:05:37.234Z",
+    "duration": 138754.444,
+    "expected": 2,
     "skipped": 0,
-    "unexpected": 0,
-    "flaky": 0
+    "unexpected": 1,
+    "flaky": 1
   }
 }

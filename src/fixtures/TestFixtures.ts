@@ -16,6 +16,7 @@ import { ConduitSignInPage } from "../pages/ConduitSignInPage";
 import { ConduitSignUpPage } from "../pages/ConduitSignUpPage";
 import { ConduitPostPage } from "../pages/ConduitPostPage";
 import { ConduitProfilePage } from "../pages/ConduitProfilePage";
+import { ConduitSettingsPage } from '../pages/ConduitSettingsPage';
 
 export type Fixtures = {
 
@@ -29,6 +30,7 @@ export type Fixtures = {
   conduitSignUpPage: ConduitSignUpPage;
   conduitPostPage: ConduitPostPage;
   conduitProfilePage: ConduitProfilePage;
+  conduitSettingsPage: ConduitSettingsPage;
 
   // NEW FIXTURE TYPES
   pwApiLib: PWApiLibrary;
@@ -102,6 +104,9 @@ export const test = base.extend<Fixtures>({
   },
   conduitProfilePage: async ({ page }, use) => {
     await use(new ConduitProfilePage(page));
+  },
+  conduitSettingsPage: async ({ page }, use) => {
+    await use(new ConduitSettingsPage(page));
   },
 });
 export { expect };

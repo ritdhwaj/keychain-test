@@ -36,54 +36,49 @@ test.describe('Conduit E2E Flow (Extended)', () => {
         // 1. SIGN UP
         await conduitSignUpPage.navigateToSignUp(baseURL);
         await conduitSignUpPage.signUp(userData.username, userData.email, userData.password);
-        await expect(page.getByRole('link', { name: userData.username })).toBeVisible({ timeout: 15000 });
+        await expect(conduitSignUpPage.userLink(userData.username)).toBeVisible({ timeout: 15000 });
 
         // 2. LOG OUT AND SIGN IN
         await page.goto(`${baseURL}/settings`);
-        await page.getByRole('button', { name: 'Or click here to logout.' }).click();
+        await conduitSignUpPage.logoutButton.click();
         await conduitSignInPage.navigateToSignIn(baseURL);
         await conduitSignInPage.signIn(userData.email, userData.password);
-        await expect(page.getByRole('link', { name: userData.username })).toBeVisible({ timeout: 15000 });
+        await expect(conduitSignUpPage.userLink(userData.username)).toBeVisible({ timeout: 15000 });
 
         // 3. CREATE POST
-        await page.getByRole('link', { name: ' New Post' }).click();
+        await conduitSignUpPage.newPostLink.click();
         await conduitPostPage.createPost(postData.title, postData.description, postData.body, postData.tags);
-        await expect(page.locator('h1')).toHaveText(postData.title);
+        await expect(conduitPostPage.titleLocator).toHaveText(postData.title);
 
         // 4. ADD COMMENT
         await conduitPostPage.addComment(commentText);
-        await expect(page.locator('.card-text')).toHaveText(commentText);
+        await expect(conduitPostPage.commentLocator).toHaveText(commentText);
 
         // 5. DELETE COMMENT
         await conduitPostPage.deleteComment();
-        await expect(page.locator('.card-text')).not.toBeVisible();
+        await expect(conduitPostPage.commentLocator).not.toBeVisible();
 
         // 6. UPDATE POST
         await conduitPostPage.updatePost(postData.updatedTitle, postData.updatedBody);
-        await expect(page.locator('h1')).toHaveText(postData.updatedTitle);
+        await expect(conduitPostPage.titleLocator).toHaveText(postData.updatedTitle);
 
         // 7. DELETE POST
         await conduitPostPage.deletePost();
         await expect(page).toHaveURL(baseURL + '/');
     });
 
-    test('should update user profile in settings', async ({ page }) => {
-        // Assuming user is already logged in from previous test or session
-        // Actually, tests should be independent. I'll use the dummy user from .env
-        await page.goto(`${baseURL}/login`);
-        await page.getByPlaceholder('Email').fill(process.env.CONDUIT_TEST_EMAIL || 'conduituser@test.com');
-        await page.getByPlaceholder('Password').fill(process.env.CONDUIT_TEST_PASSWORD || 'Conduit@123');
-        await page.getByRole('button', { name: 'Sign in' }).click();
-
+    test('should update user profile in settings', async ({ conduitSignInPage, conduitSettingsPage, page }) => {
+        // Log in using credentials from .env
+        await conduitSignInPage.navigateToSignIn(baseURL);
+        await conduitSignInPage.signIn(process.env.CONDUIT_TEST_EMAIL || 'conduituser@test.com', process.env.CONDUIT_TEST_PASSWORD || 'Conduit@123');
+        
         await page.goto(`${baseURL}/settings`);
         const newBio = `Bio updated at ${new Date().toISOString()}`;
-        await page.getByPlaceholder('Short bio about you').fill(newBio);
-        await page.getByRole('button', { name: 'Update Settings' }).click();
+        await conduitSettingsPage.updateBio(newBio);
 
         // Verify update
         await page.reload();
-        await page.waitForTimeout(5000);
-        await expect(page.getByPlaceholder('Short bio about you')).toHaveValue(newBio);
+        await expect(conduitSettingsPage.bioLocator).toHaveValue(newBio);
     });
     test('should mark an article as favorite and verify it on the profile page', async ({
         conduitSignUpPage,
@@ -94,8 +89,8 @@ test.describe('Conduit E2E Flow (Extended)', () => {
         // 1. Create a user and a post
         await conduitSignUpPage.navigateToSignUp(baseURL);
         await conduitSignUpPage.signUp(`fav_user_${timestamp}`, `fav_${timestamp}@test.com`, 'Password123!');
-
-        await page.getByRole('link', { name: ' New Post' }).click();
+        
+        await conduitSignUpPage.newPostLink.click();
         await conduitPostPage.createPost(postData.title, postData.description, postData.body, postData.tags);
 
         // 2. Navigate to profile
